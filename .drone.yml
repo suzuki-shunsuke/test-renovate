@@ -1,42 +1,16 @@
 ---
 kind: pipeline
 name: build
-clone:
-  depth: 1
-volumes:
-- name: gopath
-  temp: {}
 steps:
-- name: durl
-  image: quay.io/suzuki_shunsuke/durl:1.0.0
-  commands:
-  - sh scripts/durl.sh
-- name: download go modules
-  image: golang:1.14.4
-  commands:
-  - go mod download
-  volumes: &volumes
-  - name: gopath
-    path: /go
 - name: golangci-lint
-  image: golangci/golangci-lint:v1.27.0-alpine
+  image: golangci/golangci-lint:v1.27.0
   commands:
-  - golangci-lint run
-  volumes: *volumes
-- name: benchmark
-  image: golang:1.14.4
-  commands:
-  - cd flute
-  - go test -bench=. -benchmem
-  volumes: *volumes
+  - echo hello
 - name: codecov
   image: golang:1.14.4
   commands:
-  # bash and cgo seem to be required
-  - bash scripts/codecov-test.sh
-  - curl -s https://codecov.io/bash > /tmp/codecov.sh
-  - test "$LOCAL" = "true" -o "$DRONE_BUILD_EVENT" = "pull_request" || bash /tmp/codecov.sh
-  volumes: *volumes
-  environment:
-    CODECOV_TOKEN:
-      from_secret: codecov_token
+  - echo hello
+- name: release
+  image: goreleaser/goreleaser:v0.130.0
+  commands:
+  - echo hello
