@@ -11,6 +11,6 @@ steps:
   commands:
   - echo hello
 - name: release
-  image: goreleaser/goreleaser:v0.130.0
+  image: goreleaser/goreleaser:v0.140.0
   commands:
   - echo hello
