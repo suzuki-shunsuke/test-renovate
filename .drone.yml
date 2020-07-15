@@ -3,7 +3,7 @@ kind: pipeline
 name: build
 steps:
 - name: golangci-lint
-  image: golangci/golangci-lint:v1.27.0
+  image: golangci/golangci-lint:v1.28.3
   commands:
   - echo hello
 - name: codecov
