@@ -12,6 +12,11 @@
       "packageNames": ["golangci/golangci-lint"],
       "updateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": true
+    },
+    {
+      "packageNames": ["goreleaser/goreleaser"],
+      "updateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
     }
   ]
 }
