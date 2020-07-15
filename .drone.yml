@@ -7,7 +7,7 @@ steps:
   commands:
   - echo hello
 - name: codecov
-  image: golang:1.14.4
+  image: golang:1.14.5
   commands:
   - echo hello
 - name: release
