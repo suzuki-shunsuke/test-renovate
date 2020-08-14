@@ -1,5 +1,14 @@
 {
-  "extends": [
-    "github>suzuki-shunsuke/renovate-config:golang"
+  "packageRules": [
+    {
+      "managers": ["terraform"],
+      "fileMatch": ["^foo/.*$"],
+      "packagePatterns": [".*"]
+    },
+    {
+      "managers": ["terraform"],
+      "fileMatch": ["^bar/.*$"],
+      "packagePatterns": [".*"]
+    }
   ]
 }
