@@ -3,12 +3,14 @@
     {
       "managers": ["terraform"],
       "fileMatch": ["^foo/.*$"],
-      "packagePatterns": [".*"]
+      "packagePatterns": [".*"],
+      "groupName": "foo-terraform"
     },
     {
       "managers": ["terraform"],
       "fileMatch": ["^bar/.*$"],
-      "packagePatterns": [".*"]
+      "packagePatterns": [".*"],
+      "groupName": "bar-terraform"
     }
   ]
 }
