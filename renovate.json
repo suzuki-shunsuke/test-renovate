@@ -2,13 +2,13 @@
   "packageRules": [
     {
       "managers": ["terraform"],
-      "fileMatch": ["^foo/.*$"],
+      "paths": ["foo/*"],
       "packagePatterns": [".*"],
       "groupName": "foo-terraform"
     },
     {
       "managers": ["terraform"],
-      "fileMatch": ["^bar/.*$"],
+      "paths": ["bar/*"],
       "packagePatterns": [".*"],
       "groupName": "bar-terraform"
     }
