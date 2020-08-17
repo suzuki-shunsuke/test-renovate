@@ -1,16 +1,27 @@
 {
   "packageRules": [
     {
-      "managers": ["terraform"],
-      "paths": ["foo/*"],
-      "packagePatterns": [".*"],
-      "groupName": "foo-terraform"
+      "managers": ["regex"],
+      "paths": ["foo.txt"],
+      "reviewers": ["suzuki-shunsuke"]
     },
     {
-      "managers": ["terraform"],
-      "paths": ["bar/*"],
-      "packagePatterns": [".*"],
-      "groupName": "bar-terraform"
+      "managers": ["regex"],
+      "paths": ["bar.txt"]
+    }
+  ],
+  "regexManagers": [
+    {
+      "fileMatch": ["foo.txt"],
+      "matchStrings": ["ENV DOCKER_COMPOSE_VERSION (?<currentValue>.*?)\\n"],
+      "depNameTemplate": "docker/compose",
+      "datasourceTemplate": "github-releases"
+    },
+    {
+      "fileMatch": ["bar.txt"],
+      "matchStrings": ["ARG KUSTOMIZE_VERSION=\"(?<currentValue>.*?)\"\\n"],
+      "depNameTemplate": "kubernetes-sigs/kustomize",
+      "datasourceTemplate": "github-releases"
     }
   ]
 }
