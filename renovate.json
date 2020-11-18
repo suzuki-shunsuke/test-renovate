@@ -2,9 +2,8 @@
   "packageRules": [
     {
       "managers": ["terraform"],
-      "paths": ["foo/*"],
-      "packagePatterns": [".*"],
-      "groupName": "foo-terraform"
+      "additionalBranchPrefix": "{{parentDir}}-",
+      "packagePatterns": [".*"]
     }
   ]
 }
