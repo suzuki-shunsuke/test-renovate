@@ -1,9 +1,10 @@
 {
   "packageRules": [
     {
-      "packageNames": ["golang"],
-      "updateTypes": ["minor", "patch", "pin"],
-      "automerge": true
+      "managers": ["terraform"],
+      "paths": ["foo/*"],
+      "packagePatterns": [".*"],
+      "groupName": "foo-terraform"
     }
   ]
 }
