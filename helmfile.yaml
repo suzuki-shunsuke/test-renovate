@@ -1,0 +1,10 @@
+repositories:
+- name: vmware-tanzu
+  url: https://vmware-tanzu.github.io/helm-charts
+releases:
+- name: velero
+  namespace: velero
+  chart: vmware-tanzu/velero
+  version: 2.14.3
+  values:
+  - velero-values.yaml
