@@ -1,1 +1,11 @@
-{}
+{
+  "packageRules": [
+    {
+      "managers": ["helmfile"],
+      "packageNames": ["velero"],
+      "prBodyNotes": [
+        "[compare](https://github.com/vmware-tanzu/helm-charts/compare/velero-{{currentVersion}}...velero-{{newVersion}})"
+      ]
+    }
+  ]
+}
