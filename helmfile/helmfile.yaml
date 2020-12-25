@@ -20,4 +20,4 @@ releases:
 - name: datadog
   namespace: datadog
   chart: datadog/datadog
-  version: 2.6.1
+  version: 2.6.7
