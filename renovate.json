@@ -1,9 +1,1 @@
-{
-  "packageRules": [
-    {
-      "managers": ["terraform"],
-      "additionalBranchPrefix": "{{parentDir}}-",
-      "packagePatterns": [".*"]
-    }
-  ]
-}
+{}
