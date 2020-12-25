@@ -5,6 +5,6 @@ releases:
 - name: velero
   namespace: velero
   chart: vmware-tanzu/velero
-  version: 2.14.3
+  version: 2.14.4
   values:
   - velero-values.yaml
