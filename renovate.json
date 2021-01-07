@@ -1,36 +1,17 @@
 {
-  "labels": [
-    "renovate:{{depName}}"
-  ],
-  "enabledManagers": ["helmfile"],
-  "packageRules": [
+  "enabledManagers": ["regex"],
+  "reviewers": ["suzuki-shunsuke"],
+  "regexManagers": [
     {
-      "managers": ["helmfile"],
-      "packagePatterns": [".*"],
-      "updateTypes": ["minor", "patch", "pin"],
-      "additionalBranchPrefix": "{{baseDir}}-",
-      "commitMessageSuffix": "({{baseDir}})"
+      "fileMatch": ["^scripts/install-akoi\\.sh"],
+      "matchStrings": ["AKOI_VERSION=(?<currentValue>.*?)\\n"],
+      "depNameTemplate": "suzuki-shunsuke/akoi",
+      "datasourceTemplate": "github-releases"
     },
     {
-      "managers": ["helmfile"],
-      "packageNames": ["ingress-nginx"],
-      "prBodyNotes": [
-        "[compare](https://github.com/kubernetes/ingress-nginx/compare/helm-chart-{{currentVersion}}...helm-chart-{{newVersion}})"
-      ]
-    },
-    {
-      "managers": ["helmfile"],
-      "packageNames": ["datadog"],
-      "prBodyNotes": [
-        "[compare](https://github.com/DataDog/helm-charts/compare/datadog-{{currentVersion}}...datadog-{{newVersion}})"
-      ]
-    },
-    {
-      "managers": ["helmfile"],
-      "packageNames": ["velero"],
-      "prBodyNotes": [
-        "[compare](https://github.com/vmware-tanzu/helm-charts/compare/velero-{{currentVersion}}...velero-{{newVersion}})"
-      ]
+      "fileMatch": [".akoi.yml"],
+      "matchStrings": ["version: (?<currentValue>.*?) # renovate: depName=(?<depName>.*?)\\n"],
+      "datasourceTemplate": "github-releases"
     }
   ]
 }
