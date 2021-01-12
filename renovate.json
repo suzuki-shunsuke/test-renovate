@@ -1,6 +1,6 @@
 {
-  "enabledManagers": ["regex"],
-  "regexManagers": [
+  "enabledManagers": ["helmfile"],
+  "packageRules": [
     {
       "managers": ["helmfile"],
       "packageNames": ["ingress-nginx"],
