@@ -1,17 +1,14 @@
 {
   "enabledManagers": ["regex"],
-  "reviewers": ["suzuki-shunsuke"],
   "regexManagers": [
     {
-      "fileMatch": ["^scripts/install-akoi\\.sh"],
-      "matchStrings": ["AKOI_VERSION=(?<currentValue>.*?)\\n"],
-      "depNameTemplate": "suzuki-shunsuke/akoi",
-      "datasourceTemplate": "github-releases"
-    },
-    {
-      "fileMatch": [".akoi.yml"],
-      "matchStrings": ["version: (?<currentValue>.*?) # renovate: depName=(?<depName>.*?)\\n"],
-      "datasourceTemplate": "github-releases"
+      "managers": ["helmfile"],
+      "packageNames": ["ingress-nginx"],
+      "prBodyNotes": [
+        "[compare](https://github.com/kubernetes/ingress-nginx/compare/helm-chart-{{currentVersion}}...helm-chart-{{newVersion}})",
+        "[Changelog](https://github.com/kubernetes/ingress-nginx/blob/master/charts/ingress-nginx/CHANGELOG.md)",
+        "[Artifact Hub](https://artifacthub.io/packages/helm/ingress-nginx/ingress-nginx?modal=changelog)"
+      ]
     }
   ]
 }
