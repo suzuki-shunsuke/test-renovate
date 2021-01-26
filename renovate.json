@@ -2,6 +2,7 @@
   "packageRules": [
     {
       "managers": ["regex"],
+      "paths": ["foo/*staging*/**"],
       "additionalBranchPrefix": "{{baseDir}}-",
       "commitMessageSuffix": "({{baseDir}})",
       "automerge": true
