@@ -6,7 +6,7 @@ link_path: ".akoi/bin/{{.Name}}"
 packages:
   ci-info:
     url: 'https://github.com/suzuki-shunsuke/{{.Name}}/releases/download/{{.Version}}/{{.Name}}_{{trimPrefix "v" .Version}}_{{.OS}}_{{.Arch}}.tar.gz'
-    version: v1.0.0 # renovate: depName=suzuki-shunsuke/ci-info
+    version: v1.1.0 # renovate: depName=suzuki-shunsuke/ci-info
     files:
     - name: ci-info
       archive: "{{.Name}}"
