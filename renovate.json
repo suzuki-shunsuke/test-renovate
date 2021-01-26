@@ -16,7 +16,7 @@
     },
     {
       "datasources": ["docker"],
-      "packageNames": ["metrics-server"],
+      "packageNames": ["k8s.gcr.io/metrics-server/metrics-server"],
       "prBodyNotes": [
         "[compare](https://github.com/kubernetes-sigs/metrics-server/compare/{{currentVersion}}...{{newVersion}}), [Releases](https://github.com/kubernetes-sigs/metrics-server/releases)"
       ]
