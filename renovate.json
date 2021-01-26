@@ -2,17 +2,9 @@
   "packageRules": [
     {
       "managers": ["regex"],
-      "paths": ["**staging**"],
       "additionalBranchPrefix": "{{baseDir}}-",
       "commitMessageSuffix": "({{baseDir}})",
       "automerge": true
-    },
-    {
-      "managers": ["regex"],
-      "paths": ["*production*"],
-      "additionalBranchPrefix": "{{baseDir}}-",
-      "commitMessageSuffix": "({{baseDir}})",
-      "automerge": false
     }
   ],
   "regexManagers": [
