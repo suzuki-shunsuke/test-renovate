@@ -1,5 +1,5 @@
 {
-  "enabledManagers": ["helmfile"],
+  "enabledManagers": ["helmfile", "kubernetes"],
   "packageRules": [
     {
       "managers": ["helmfile"],
