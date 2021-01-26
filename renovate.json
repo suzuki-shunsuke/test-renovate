@@ -6,6 +6,13 @@
       "additionalBranchPrefix": "{{baseDir}}-",
       "commitMessageSuffix": "({{baseDir}})",
       "automerge": true
+    },
+    {
+      "managers": ["regex"],
+      "paths": ["foo/*production*/**"],
+      "additionalBranchPrefix": "{{baseDir}}-",
+      "commitMessageSuffix": "({{baseDir}})",
+      "automerge": false
     }
   ],
   "regexManagers": [
