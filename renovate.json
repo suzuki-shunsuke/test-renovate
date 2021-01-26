@@ -1,4 +1,7 @@
 {
+  "kubernetes": {
+    "fileMatch": ["^deployment\\.yaml$"]
+  },
   "packageRules": [
     {
       "managers": ["regex"],
