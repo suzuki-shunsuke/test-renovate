@@ -30,6 +30,12 @@
       "fileMatch": ["\\.akoi\\.yml$"],
       "matchStrings": ["version: (?<currentValue>.*?) # renovate: depName=(?<depName>.*?)\\n"],
       "datasourceTemplate": "github-releases"
+    },
+    {
+      "fileMatch": ["^kustomization\\.yaml$"],
+      "matchStrings": ["- https://github.com/summerwind/actions-runner-controller/releases/download/(?<currentValue>.*?)/actions-runner-controller.yaml"],
+      "depNameTemplate": "summerwind/actions-runner-controller",
+      "datasourceTemplate": "github-releases"
     }
   ]
 }
