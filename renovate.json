@@ -23,6 +23,13 @@
       "prBodyNotes": [
         "[compare](https://github.com/kubernetes-sigs/metrics-server/compare/{{currentVersion}}...{{newVersion}}), [Releases](https://github.com/kubernetes-sigs/metrics-server/releases)"
       ]
+    },
+    {
+      "datasources": ["orb"],
+      "packageNames": ["aws-ecr"],
+      "prBodyNotes": [
+        "[compare](https://github.com/CircleCI-Public/aws-ecr-orb/compare/{{currentVersion}}...{{newVersion}})"
+      ]
     }
   ],
   "regexManagers": [

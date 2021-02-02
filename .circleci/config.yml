@@ -1,0 +1,15 @@
+version: 2.1
+orbs:
+  aws-ecr: circleci/aws-ecr@6.15.2
+workflows:
+  build:
+    jobs:
+      - foo
+jobs:
+  foo:
+    docker:
+      - image: alpine:3.11.6
+    steps:
+      - run:
+          name: foo
+          command: echo foo
