@@ -8,7 +8,7 @@ workflows:
 jobs:
   foo:
     docker:
-      - image: alpine:3.11.6
+      - image: alpine:3.13.1
     steps:
       - run:
           name: foo
