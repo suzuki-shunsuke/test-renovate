@@ -28,7 +28,7 @@
       "datasources": ["orb"],
       "packageNames": ["aws-ecr"],
       "prBodyNotes": [
-        "[compare](https://github.com/CircleCI-Public/aws-ecr-orb/compare/{{currentVersion}}...{{newVersion}})"
+        "[compare](https://github.com/CircleCI-Public/aws-ecr-orb/compare/v{{currentVersion}}...v{{newVersion}})"
       ]
     }
   ],
