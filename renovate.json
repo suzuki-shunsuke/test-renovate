@@ -1,57 +1,9 @@
 {
-  "kubernetes": {"fileMatch": ["^deployment\\.yaml$"]},
   "packageRules": [
     {
+      "matchPaths": ["bar/*"],
       "additionalBranchPrefix": "{{baseDir}}-",
-      "commitMessageSuffix": "({{baseDir}})",
-      "automerge": true,
-      "matchManagers": ["regex"],
-      "matchPaths": ["foo/*staging*/**"]
-    },
-    {
-      "additionalBranchPrefix": "{{baseDir}}-",
-      "commitMessageSuffix": "({{baseDir}})",
-      "automerge": false,
-      "matchManagers": ["regex"],
-      "matchPaths": ["foo/*production*/**"]
-    },
-    {
-      "prBodyNotes": [
-        "[compare](https://github.com/kubernetes-sigs/metrics-server/compare/{{currentVersion}}...{{newVersion}}), [Releases](https://github.com/kubernetes-sigs/metrics-server/releases)"
-      ],
-      "matchDatasources": ["docker"],
-      "matchPackageNames": ["k8s.gcr.io/metrics-server/metrics-server"]
-    },
-    {
-      "prBodyNotes": [
-        "[compare](https://github.com/CircleCI-Public/aws-ecr-orb/compare/v{{currentVersion}}...v{{newVersion}})"
-      ],
-      "matchDatasources": ["orb"],
-      "matchPackageNames": ["aws-ecr"]
-    }
-  ],
-  "regexManagers": [
-    {
-      "fileMatch": ["\\.akoi\\.yml$"],
-      "matchStrings": [
-        "version: (?<currentValue>.*?) # renovate: depName=(?<depName>.*?)\\n"
-      ],
-      "datasourceTemplate": "github-releases"
-    },
-    {
-      "fileMatch": ["^kustomization\\.yaml$"],
-      "matchStrings": [
-        "- https://github.com/summerwind/actions-runner-controller/releases/download/(?<currentValue>.*?)/actions-runner-controller.yaml"
-      ],
-      "depNameTemplate": "summerwind/actions-runner-controller",
-      "datasourceTemplate": "github-releases"
-    },
-    {
-      "fileMatch": ["^kustomization\\.yaml$"],
-      "matchStrings": [
-        "https://raw.githubusercontent.com/(?<depName>[^/]+/[^/]+?)/(?<currentValue>[^/]+)/"
-      ],
-      "datasourceTemplate": "github-releases"
+      "commitMessageSuffix": "({{baseDir}})"
     }
   ]
 }
