@@ -2,8 +2,8 @@
   "packageRules": [
     {
       "matchPaths": ["bar/*"],
-      "additionalBranchPrefix": "{{baseDir}}-",
-      "commitMessageSuffix": "({{baseDir}})"
+      "additionalBranchPrefix": "{{packageFileDir}}-",
+      "commitMessageSuffix": "({{packageFileDir}})"
     }
   ]
 }
