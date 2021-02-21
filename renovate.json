@@ -1,4 +1,8 @@
 {
+  "labels": [
+    "renovate:{{depName}}", "renovate:{{depName}}/{{newVersion}}",
+    "datasource:{{datasource}}", "depType:{{deptType}}"
+  ],
   "packageRules": [
     {
       "matchPaths": ["bar/*"],
