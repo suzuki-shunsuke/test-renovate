@@ -1,13 +1,11 @@
 {
-  "labels": [
-    "renovate:{{depName}}", "renovate:{{depName}}/{{newVersion}}",
-    "datasource:{{datasource}}", "depType:{{deptType}}"
-  ],
-  "packageRules": [
+  "regexManagers": [
     {
-      "matchPaths": ["bar/*"],
-      "additionalBranchPrefix": "{{packageFileDir}}-",
-      "commitMessageSuffix": "({{packageFileDir}})"
+      "fileMatch": ["Dockerfile"],
+      "matchStrings": ["ARG PROTOC_VERSION=(?<currentValue>.*?)\\n"],
+      "depNameTemplate": "protocolbuffers/protobuf",
+      "datasourceTemplate": "github-releases",
+      "versioningTemplate": "docker"
     }
   ]
 }
