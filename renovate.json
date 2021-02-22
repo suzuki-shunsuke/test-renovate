@@ -1,11 +1,10 @@
 {
   "regexManagers": [
     {
-      "fileMatch": ["Dockerfile"],
-      "matchStrings": ["ARG PROTOC_VERSION=(?<currentValue>.*?)\\n"],
+      "fileMatch": ["protoc/Dockerfile"],
+      "matchStrings": ["ARG PROTOC_VERSION=(?<currentValue>\\d+\\.\\d+\\.\\d+?)\\n"],
       "depNameTemplate": "protocolbuffers/protobuf",
-      "datasourceTemplate": "github-releases",
-      "versioningTemplate": "docker"
+      "datasourceTemplate": "github-releases"
     }
   ]
 }
