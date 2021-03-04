@@ -7,7 +7,7 @@
     },
     {
       "matchPackagePatterns": ["^go\\.opentelemetry\\.io/otel"],
-      "groupName": "opentelemetry-go"
+      "groupName": "go.opentelemetry.io/otel"
     }
   ]
 }
