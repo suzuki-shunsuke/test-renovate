@@ -1,10 +1,9 @@
 {
-  "regexManagers": [
+  "enabledManagers": ["gomod"],
+  "packageRules": [
     {
-      "fileMatch": ["Dockerfile"],
-      "matchStrings": ["ARG PROTOC_VERSION=(?<currentValue>\\d+\\.\\d+\\.\\d+?)\\n"],
-      "depNameTemplate": "protocolbuffers/protobuf",
-      "datasourceTemplate": "github-releases"
+      "matchManagers": ["gomod"],
+      "matchUpdateTypes": ["minor", "patch", "pin"]
     }
   ]
 }
