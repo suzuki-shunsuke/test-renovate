@@ -4,6 +4,10 @@
     {
       "matchManagers": ["gomod"],
       "matchUpdateTypes": ["minor", "patch", "pin"]
+    },
+    {
+      "matchPackagePatterns": ["^go\\.opentelemetry\\.io/otel"],
+      "groupName": "opentelemetry-go"
     }
   ]
 }
