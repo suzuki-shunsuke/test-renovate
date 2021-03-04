@@ -1,5 +1,6 @@
 {
   "enabledManagers": ["gomod"],
+  "postUpdateOptions": ["gomodTidy"],
   "packageRules": [
     {
       "matchManagers": ["gomod"],
