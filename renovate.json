@@ -1,5 +1,12 @@
 {
   "enabledManagers": ["regex"],
+  "packageRules": [
+    {
+      "matchManagers": ["circleci"],
+      "matchDatasources": ["docker"],
+      "versioning": "docker"
+    }
+  ],
   "regexManagers": [
     {
       "fileMatch": [".circleci/config\\.yml"],
