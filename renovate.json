@@ -2,7 +2,7 @@
   "enabledManagers": ["regex"],
   "packageRules": [
     {
-      "matchManagers": ["circleci"],
+      "matchManagers": ["regex"],
       "matchDatasources": ["docker"],
       "versioning": "docker"
     }
