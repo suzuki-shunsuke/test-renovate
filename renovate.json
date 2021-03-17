@@ -1,14 +1,11 @@
 {
-  "enabledManagers": ["gomod"],
-  "postUpdateOptions": ["gomodTidy"],
-  "packageRules": [
+  "enabledManagers": ["regex"],
+  "regexManagers": [
     {
-      "matchManagers": ["gomod"],
-      "matchUpdateTypes": ["minor", "patch", "pin"]
-    },
-    {
-      "matchPackagePatterns": ["^go\\.opentelemetry\\.io/otel"],
-      "groupName": "go.opentelemetry.io/otel"
+      "fileMatch": [".circleci/config\\.yml"],
+      "matchStrings": ["tag: \"(?<currentValue>.*?)\" # renovate: cimg/go"],
+      "depNameTemplate": "cimg/go",
+      "datasourceTemplate": "docker"
     }
   ]
 }

@@ -1,14 +1,16 @@
 version: 2.1
 orbs:
   aws-ecr: circleci/aws-ecr@6.15.2
+  go: circleci/go@1.5.0
 workflows:
   build:
     jobs:
       - foo
 jobs:
   foo:
-    docker:
-      - image: alpine:3.11.6
+    executor:
+      name: "go/default"
+      tag: "1.15"
     steps:
       - run:
           name: foo
