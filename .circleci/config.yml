@@ -10,7 +10,7 @@ jobs:
   foo:
     executor:
       name: "go/default"
-      tag: "1.15"
+      tag: "1.15" # renovate: cimg/go
     steps:
       - run:
           name: foo
