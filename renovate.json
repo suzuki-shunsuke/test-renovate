@@ -4,6 +4,7 @@
     {
       "matchManagers": ["regex"],
       "matchDatasources": ["docker"],
+      "matchPackageNames": ["cimg/go"],
       "versioning": "docker"
     }
   ],
