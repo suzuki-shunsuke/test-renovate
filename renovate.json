@@ -4,14 +4,9 @@
   ],
   "regexManagers": [
     {
-      "fileMatch": ["\\.?aqua\\.ya?ml"],
+      "fileMatch": ["aqua\\.yaml"],
       "matchStrings": [
-        "^ +(version|ref): (?<currentValue>[^'\"\\n]*) +# renovate: depName=(?<depName>.*)",
-        "^ +(version|ref): \"(?<currentValue>[^'\"\\n]*)\" +# renovate: depName=(?<depName>.*)",
-        "^ +(version|ref): '(?<currentValue>[^'\"\\n]*)' +# renovate: depName=(?<depName>.*)",
-        "name: (?<depName>[^'\"]*)@(?<currentValue>[^'\"\\n]*)",
-        "name: \"(?<depName>[^']*)@(?<currentValue>[^'\"\\n]*)\"",
-        "name: '(?<depName>[^\"]*)@(?<currentValue>[^'\"\\n]*)'"
+        "^ +(version|ref): (?<currentValue>[^'\"\\n]*) +# renovate: depName=(?<depName>.*)"
       ],
       "datasourceTemplate": "github-releases"
     }
