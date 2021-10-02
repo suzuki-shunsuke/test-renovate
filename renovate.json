@@ -6,8 +6,7 @@
     {
       "fileMatch": ["aqua\\.yaml"],
       "matchStrings": [
-        "^ +(version|ref): (?<currentValue>[^'\"\\n]*) +# renovate: depName=(?<depName>.*)",
-        "(version|ref): \"?(?<currentValue>.*)\"? +# renovate: depName=(?<depName>.*)"
+        "^ +(version|ref): (?<currentValue>.*) +# renovate: depName=(?<depName>.*)"
       ],
       "datasourceTemplate": "github-releases"
     }
