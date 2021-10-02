@@ -1,19 +1,19 @@
 {
-  "enabledManagers": ["regex"],
-  "packageRules": [
-    {
-      "matchManagers": ["regex"],
-      "matchDatasources": ["docker"],
-      "matchPackageNames": ["cimg/go"],
-      "versioning": "docker"
-    }
+  "extends": [
+    "config:base"
   ],
   "regexManagers": [
     {
-      "fileMatch": [".circleci/config\\.yml"],
-      "matchStrings": ["tag: \"(?<currentValue>.*?)\" # renovate: cimg/go"],
-      "depNameTemplate": "cimg/go",
-      "datasourceTemplate": "docker"
+      "fileMatch": ["\\.?aqua\\.ya?ml"],
+      "matchStrings": [
+        "^ +(version|ref): (?<currentValue>[^'\"\\n]*) +# renovate: depName=(?<depName>.*)",
+        "^ +(version|ref): \"(?<currentValue>[^'\"\\n]*)\" +# renovate: depName=(?<depName>.*)",
+        "^ +(version|ref): '(?<currentValue>[^'\"\\n]*)' +# renovate: depName=(?<depName>.*)",
+        "name: (?<depName>[^'\"]*)@(?<currentValue>[^'\"\\n]*)",
+        "name: \"(?<depName>[^']*)@(?<currentValue>[^'\"\\n]*)\"",
+        "name: '(?<depName>[^\"]*)@(?<currentValue>[^'\"\\n]*)'"
+      ],
+      "datasourceTemplate": "github-releases"
     }
   ]
 }
