@@ -1,6 +1,7 @@
 {
   "extends": [
-    "config:base"
+    "config:base",
+    "github>suzuki-shunsuke/test-renovate:file(aqua/conftest.yaml)"
   ],
   "regexManagers": [
     {
