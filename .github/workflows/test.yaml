@@ -1,0 +1,12 @@
+name: test
+on:
+  pull_request:
+    branches: [master]
+  push:
+    branches: [master]
+jobs:
+  conftest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: fail
+        run: "false"
