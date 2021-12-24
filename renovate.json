@@ -7,6 +7,12 @@
       "matchPaths": ["Dockerfile"],
       "reviewers": ["suzuki-shunsuke"],
       "automerge": true
+    },
+    {
+      "matchPaths": ["Dockerfile"],
+      "matchPackageNames": ["ubuntu"],
+      "reviewers": ["suzuki-shunsuke"],
+      "automerge": false
     }
   ]
 }
