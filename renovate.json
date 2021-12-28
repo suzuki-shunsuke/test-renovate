@@ -1,6 +1,7 @@
 {
   "extends": [
-    "config:base"
+    "config:base",
+    "github>suzuki-shunsuke/renovate-config#0.1.0"
   ],
   "packageRules": [
     {
