@@ -1,19 +1,7 @@
 {
   "extends": [
     "config:base",
-    "github>suzuki-shunsuke/renovate-config#0.1.1"
-  ],
-  "packageRules": [
-    {
-      "matchPaths": ["Dockerfile"],
-      "reviewers": ["suzuki-shunsuke"],
-      "automerge": true
-    },
-    {
-      "matchPaths": ["Dockerfile"],
-      "matchPackageNames": ["ubuntu"],
-      "reviewers": ["suzuki-shunsuke"],
-      "automerge": true
-    }
+    "github>aquaproj/aqua-renovate-config#0.1.0",
+    "github>aquaproj/aqua-renovate-config:file#0.1.0(aqua/.*\\.ya?ml)"
   ]
 }
