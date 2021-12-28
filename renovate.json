@@ -1,7 +1,15 @@
 {
   "extends": [
-    "config:base",
-    "github>aquaproj/aqua-renovate-config#0.1.0",
-    "github>aquaproj/aqua-renovate-config:file#0.1.0(aqua/.*\\.ya?ml)"
+    "config:base"
+  ],
+  "regexManagers": [
+    {
+      "fileMatch": ["^\\.github/.*\\.ya?ml$"],
+      "matchStrings": [
+        "aqua_version: (?<currentValue>.*?)"
+      ],
+      "depNameTemplate": "aquaproj/aqua",
+      "datasourceTemplate": "github-releases"
+    }
   ]
 }
