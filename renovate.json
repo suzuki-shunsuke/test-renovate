@@ -4,13 +4,12 @@
   ],
   "regexManagers": [
     {
-      "fileMatch": ["^\\.github/.*\\.ya?ml$"],
+      "fileMatch": ["install-aqua\\.sh"],
       "matchStrings": [
-        "aqua_version: (?<currentValue>.*?)\\n",
-        "aqua_version: (?<currentValue>.*?) +#.*\\n"
+        "raw\\.githubusercontent\\.com/aquaproj/aqua-installer/(?<currentValue>?)/aqua-installer"
       ],
-      "depNameTemplate": "aquaproj/aqua",
-      "datasourceTemplate": "github-releases"
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "aquaproj/aqua-installer"
     }
   ]
 }
