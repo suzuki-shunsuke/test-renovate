@@ -1,7 +1,9 @@
 registries:
 - type: standard
-  ref: v0.8.9
+  ref: v0.12.2
 
 packages:
 # init: a
 - name: ahmetb/kubectl-tree@v0.3.0
+- name: cli/cli@v2.2.0
+- name: GoogleCloudPlatform/terraformer/aws@0.8.16
