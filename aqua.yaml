@@ -4,6 +4,4 @@ registries:
 
 packages:
 # init: a
-- name: ahmetb/kubectl-tree
-  registry: standard
-  version: v0.4.0 # renovate: depName=ahmetb/kubectl-tree
+- name: ahmetb/kubectl-tree@v0.3.0

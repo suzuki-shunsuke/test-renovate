@@ -1,6 +1,14 @@
 {
   "extends": [
-    "config:base",
-    "github>aquaproj/aqua-renovate-config:installer-script#0.1.2(install-aqua\\.sh)"
+    "config:base"
+  ],
+  "regexManagers": [
+    {
+      "fileMatch": ["\\.?aqua\\.ya?ml"],
+      "matchStrings": [
+        " +name: (?<depName>[^'\" /\\n]+/[^'\" /\\n]+)@(?<currentValue>[^'\"\\n]+)"
+      ],
+      "datasourceTemplate": "github-releases"
+    }
   ]
 }
