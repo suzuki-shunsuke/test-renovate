@@ -6,7 +6,7 @@ packages:
 # init: a
 - name: ahmetb/kubectl-tree@v0.3.0
 - name: cli/cli@v2.2.0
-- name: GoogleCloudPlatform/terraformer/aws@0.8.16
+- name: GoogleCloudPlatform/terraformer/aws@0.8.18
 - name: "cloudflare/cfssl/mkbundle@v1.6.0"
 - name: 'aelsabbahy/goss/dgoss@v0.3.15'
 - name: kastenhq/external-tools/k10tools
