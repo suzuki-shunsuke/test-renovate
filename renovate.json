@@ -1,9 +1,11 @@
 {
   "extends": [
+    "config:base",
     "github>aquaproj/aqua-renovate-config#0.1.0",
     "github>aquaproj/aqua-renovate-config:base#0.1.1",
     "github>aquaproj/aqua-renovate-config:file#0.1.1(aqua\\.yaml)"
   ],
+  "enabledManagers": ["regex"],
   "regexManagers": [
     {
       "fileMatch": [
