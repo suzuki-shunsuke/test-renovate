@@ -1,17 +1,25 @@
 {
   "extends": [
-    "config:base",
-    "github>aquaproj/aqua-renovate-config#0.1.2"
+    "github>aquaproj/aqua-renovate-config#0.1.0",
+    "github>aquaproj/aqua-renovate-config:base#0.1.0",
+    "github>aquaproj/aqua-renovate-config:file#0.1.0(aqua\\.yaml)"
   ],
   "regexManagers": [
     {
-      "fileMatch": ["\\.?aqua\\.ya?ml"],
-      "matchStrings": [
-        " +(version|ref): ('\")?(?<currentValue>[^'\"\\n]+)('\")? +# renovate: depName=(?<depName>)",
-        " +(version|ref): '(?<currentValue>[^'\"\\n]+)' +# renovate: depName=(?<depName>)",
-        " +name: ('\")?(?<depName>[^'\" /\\n]+/[^'\" /\\n]+)(/[^'\" /@\\n]+)*@(?<currentValue>[^'\"\\n]+)('\")?"
+      "fileMatch": [
+        "^renovate\\.json5?$",
+        "^\\.github/renovate\\.json5?$",
+        "^\\.gitlab/renovate\\.json5?$",
+        "^\\.renovaterc\\.json$",
+        "^\\.renovaterc$"
       ],
-      "datasourceTemplate": "github-releases"
+      "matchStrings": [
+        "\"github>aquaproj/aqua-renovate-config#(?<currentValue>[^ \\n\\(]+)",
+        "\"github>aquaproj/aqua-renovate-config:.*#(?<currentValue>[^ \\n\\(]+)",
+        "\"github>aquaproj/aqua-renovate-config/.*#(?<currentValue>[^ \\n\\(]+)"
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "aquaproj/aqua-renovate-config"
     }
   ]
 }
