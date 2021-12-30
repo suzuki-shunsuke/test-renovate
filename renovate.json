@@ -7,6 +7,7 @@
       "fileMatch": ["\\.?aqua\\.ya?ml"],
       "matchStrings": [
         " +(version|ref): ('\")?(?<currentValue>[^'\"\\n]+)('\")? +# renovate: depName=(?<depName>)",
+        " +(version|ref): '(?<currentValue>[^'\"\\n]+)' +# renovate: depName=(?<depName>)",
         " +name: ('\")?(?<depName>[^'\" /\\n]+/[^'\" /\\n]+)(/[^'\" /@\\n]+)*@(?<currentValue>[^'\"\\n]+)('\")?"
       ],
       "datasourceTemplate": "github-releases"
