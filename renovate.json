@@ -6,6 +6,9 @@
     "github>aquaproj/aqua-renovate-config:file#0.1.1(aqua\\.yaml)"
   ],
   "enabledManagers": ["regex"],
+  "prHourlyLimit": 0,
+  "prConcurrentLimit": 0,
+  "branchConcurrentLimit": 0,
   "regexManagers": [
     {
       "fileMatch": [
