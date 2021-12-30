@@ -10,4 +10,4 @@ packages:
 - name: "cloudflare/cfssl/mkbundle@v1.6.0"
 - name: 'aelsabbahy/goss/dgoss@v0.3.15'
 - name: kastenhq/external-tools/k10tools
-  version: '4.5.0' # renovate: depName=kastenhq/external-tools
+  version: '4.5.6' # renovate: depName=kastenhq/external-tools
