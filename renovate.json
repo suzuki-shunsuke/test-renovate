@@ -1,30 +1,10 @@
 {
   "extends": [
     "config:base",
-    "github>aquaproj/aqua-renovate-config#0.1.0",
-    "github>aquaproj/aqua-renovate-config:base#0.1.1",
-    "github>aquaproj/aqua-renovate-config:file#0.1.1(aqua\\.yaml)"
+    "github>aquaproj/aqua-renovate-config#0.1.4"
   ],
   "enabledManagers": ["regex"],
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
-  "branchConcurrentLimit": 0,
-  "regexManagers": [
-    {
-      "fileMatch": [
-        "^renovate\\.json5?$",
-        "^\\.github/renovate\\.json5?$",
-        "^\\.gitlab/renovate\\.json5?$",
-        "^\\.renovaterc\\.json$",
-        "^\\.renovaterc$"
-      ],
-      "matchStrings": [
-        "\"github>aquaproj/aqua-renovate-config#(?<currentValue>[^\" \\n\\(]+)",
-        "\"github>aquaproj/aqua-renovate-config:.*#(?<currentValue>[^\" \\n\\(]+)",
-        "\"github>aquaproj/aqua-renovate-config/.*#(?<currentValue>[^\" \\n\\(]+)"
-      ],
-      "datasourceTemplate": "github-releases",
-      "depNameTemplate": "aquaproj/aqua-renovate-config"
-    }
-  ]
+  "branchConcurrentLimit": 0
 }
