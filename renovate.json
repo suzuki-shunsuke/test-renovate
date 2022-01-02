@@ -1,6 +1,7 @@
 {
   "extends": [
-    "config:base"
+    "config:base",
+    "github>aquaproj/aqua-renovate-config#0.1.6"
   ],
   "enabledManagers": ["regex"],
   "prHourlyLimit": 0,
@@ -10,22 +11,12 @@
     {
       "fileMatch": ["\\.?aqua\\.ya?ml"],
       "matchStrings": [
-        " +['\"]?version['\"]? *: +['\"]?kustomize/(?<currentValue>[^'\" \\n]+)['\"]? +# renovate: depName=kubernetes-sigs/kustomize[ \\n]",
-        " +['\"]?name['\"]? *: +['\"]?kubernetes-sigs/kustomize@kustomize/(?<currentValue>[^'\" \\n]+)['\"]?"
+        " +['\"]?version['\"]? *: +['\"]?v(?<currentValue>[^'\" \\n]+)['\"]? +# renovate: depName=kubernetes/kubectl[ \\n]",
+        " +['\"]?name['\"]? *: +['\"]?kubernetes/kubectl@v(?<currentValue>[^'\" \\n]+)['\"]?"
       ],
-      "extractVersionTemplate": "^kustomize/(?<version>.*)$",
-      "datasourceTemplate": "github-releases",
-      "depNameTemplate": "kubernetes-sigs/kustomize"
-    },
-    {
-      "fileMatch": ["\\.?aqua\\.ya?ml"],
-      "matchStrings": [
-        " +['\"]?version['\"]? *: +['\"]?(?<currentValue>[^'\" \\n]+)['\"]? +# renovate: depName=golang/go[ \\n]",
-        " +['\"]?name['\"]? *: +['\"]?golang/go@(?<currentValue>[^'\" \\n]+)['\"]?"
-      ],
-      "extractVersionTemplate": "^go(?<version>.*)$",
+      "extractVersionTemplate": "^kubernetes-(?<version>.*)$",
       "datasourceTemplate": "github-tags",
-      "depNameTemplate": "golang/go"
+      "depNameTemplate": "kubernetes/kubectl"
     }
   ]
 }
