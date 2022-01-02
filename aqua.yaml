@@ -7,4 +7,4 @@ registries:
 
 packages:
 - name: kubernetes-sigs/kustomize
-  version: kustomize/v4.0.0
+  version: kustomize/v4.4.1
