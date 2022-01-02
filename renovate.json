@@ -1,22 +1,10 @@
 {
   "extends": [
     "config:base",
-    "github>aquaproj/aqua-renovate-config#0.1.6"
+    "github>aquaproj/aqua-renovate-config"
   ],
   "enabledManagers": ["regex"],
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
-  "branchConcurrentLimit": 0,
-  "regexManagers": [
-    {
-      "fileMatch": ["\\.?aqua\\.ya?ml"],
-      "matchStrings": [
-        " +['\"]?version['\"]? *: +['\"]?v(?<currentValue>[^'\" \\n]+)['\"]? +# renovate: depName=kubernetes/kubectl[ \\n]",
-        " +['\"]?name['\"]? *: +['\"]?kubernetes/kubectl@v(?<currentValue>[^'\" \\n]+)['\"]?"
-      ],
-      "extractVersionTemplate": "^kubernetes-(?<version>.*)$",
-      "datasourceTemplate": "github-tags",
-      "depNameTemplate": "kubernetes/kubectl"
-    }
-  ]
+  "branchConcurrentLimit": 0
 }
