@@ -14,8 +14,8 @@ packages:
 - name: kubernetes-sigs/kustomize
   version: kustomize/v4.0.0  # hello
 - name: kubernetes-sigs/kustomize
-  version: kustomize/v4.0.0  # renovate: depName=kubernetes-sigs/kustomize
-- name: kubernetes-sigs/kustomize@kustomize/v4.0.0  # hello
+  version: kustomize/v4.4.1  # renovate: depName=kubernetes-sigs/kustomize
+- name: kubernetes-sigs/kustomize@kustomize/v4.4.1  # hello
 - name: kubernetes/kubectl@v1.21.8
 - name: kubernetes/kubectl
   version: v1.21.8
