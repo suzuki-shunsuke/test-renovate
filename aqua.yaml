@@ -6,6 +6,11 @@ registries:
   ref: v0.12.4 # renovate: depName=aquaproj/aqua-registry
 
 packages:
+- name: golang/go
+  version: 1.16.10
+- name: golang/go@1.16.10
 - name: kubernetes-sigs/kustomize
   version: kustomize/v4.0.0  # hello
+- name: kubernetes-sigs/kustomize
+  version: kustomize/v4.0.0  # renovate: depName=kubernetes-sigs/kustomize
 - name: kubernetes-sigs/kustomize@kustomize/v4.0.0  # hello

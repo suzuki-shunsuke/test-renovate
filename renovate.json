@@ -1,10 +1,21 @@
 {
   "extends": [
-    "config:base",
-    "github>aquaproj/aqua-renovate-config"
+    "config:base"
   ],
   "enabledManagers": ["regex"],
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
-  "branchConcurrentLimit": 0
+  "branchConcurrentLimit": 0,
+  "regexManagers": [
+    {
+      "fileMatch": ["\\.?aqua\\.ya?ml"],
+      "matchStrings": [
+        " +['\"]?version['\"]? *: +['\"]?kustomize/(?<currentValue>[^'\" \\n]+)['\"]? +# renovate: depName=kubernetes-sigs/kustomize[ \\n]",
+        " +['\"]?name['\"]? *: +['\"]?kubernetes-sigs/kustomize@kustomize/(?<currentValue>[^'\" \\n]+)['\"]?"
+      ],
+      "extractVersionTemplate": "^go(?<version>.*)$",
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "golang/go"
+    }
+  ]
 }
