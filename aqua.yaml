@@ -6,4 +6,4 @@ registries:
   ref: v0.12.4 # renovate: depName=aquaproj/aqua-registry
 
 packages:
-- name: kubernetes-sigs/kustomize@kustomize/v4.0.0
+- name: kubernetes-sigs/kustomize@kustomize/v4.4.1
