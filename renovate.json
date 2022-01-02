@@ -6,19 +6,13 @@
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
   "branchConcurrentLimit": 0,
-  "packageRules": [
-    {
-      "matchPackageNames": ["kubernetes-sigs/kustomize"],
-      "matchManagers": ["regex"],
-      "extractVersion": "^kustomize/(?<version>.*)$"
-    }
-  ],
   "regexManagers": [
     {
       "fileMatch": ["\\.?aqua\\.ya?ml"],
       "matchStrings": [
         " +['\"]?name['\"]? *: +['\"]?kubernetes-sigs/kustomize@kustomize/(?<currentValue>[^'\" \\n]+)['\"]?"
       ],
+      "extractVersionTemplate": "^kustomize/(?<version>.*)$",
       "datasourceTemplate": "github-releases",
       "depNameTemplate": "kubernetes-sigs/kustomize"
     }
