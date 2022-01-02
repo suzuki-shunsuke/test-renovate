@@ -24,7 +24,7 @@
         " +['\"]?name['\"]? *: +['\"]?golang/go@(?<currentValue>[^'\" \\n]+)['\"]?"
       ],
       "extractVersionTemplate": "^go(?<version>.*)$",
-      "datasourceTemplate": "github-releases",
+      "datasourceTemplate": "github-tags",
       "depNameTemplate": "golang/go"
     }
   ]
