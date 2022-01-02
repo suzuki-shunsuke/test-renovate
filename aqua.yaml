@@ -17,3 +17,7 @@ packages:
   version: kustomize/v4.0.0  # renovate: depName=kubernetes-sigs/kustomize
 - name: kubernetes-sigs/kustomize@kustomize/v4.0.0  # hello
 - name: kubernetes/kubectl@v1.21.8
+- name: kubernetes/kubectl
+  version: v1.21.8
+- name: kubernetes/kubectl
+  version: v1.21.8  # renovate: depName=kubernetes/kubectl
