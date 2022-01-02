@@ -8,6 +8,8 @@ registries:
 packages:
 - name: golang/go
   version: 1.16.10
+- name: golang/go
+  version: 1.16.10 # renovate: depName=golang/go
 - name: golang/go@1.16.10
 - name: kubernetes-sigs/kustomize
   version: kustomize/v4.0.0  # hello
