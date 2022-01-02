@@ -1,22 +1,10 @@
 {
   "extends": [
     "config:base",
-    "github>aquaproj/aqua-renovate-config#0.1.4"
+    "github>aquaproj/aqua-renovate-config"
   ],
   "enabledManagers": ["regex"],
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
-  "branchConcurrentLimit": 0,
-  "regexManagers": [
-    {
-      "fileMatch": ["\\.?aqua\\.ya?ml"],
-      "matchStrings": [
-        " +['\"]?version['\"]? *: +['\"]?kustomize/(?<currentValue>[^'\" \\n]+)['\"]?",
-        " +['\"]?name['\"]? *: +['\"]?kubernetes-sigs/kustomize@kustomize/(?<currentValue>[^'\" \\n]+)['\"]?"
-      ],
-      "extractVersionTemplate": "^kustomize/(?<version>.*)$",
-      "datasourceTemplate": "github-releases",
-      "depNameTemplate": "kubernetes-sigs/kustomize"
-    }
-  ]
+  "branchConcurrentLimit": 0
 }
