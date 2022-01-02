@@ -6,5 +6,12 @@
   "enabledManagers": ["regex"],
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
-  "branchConcurrentLimit": 0
+  "branchConcurrentLimit": 0,
+  "packageRules": [
+    {
+      "matchPackageNames": ["kubernetes-sigs/kustomize"],
+      "matchManagers": ["regex"],
+      "extractVersion": "^kustomize/(?<version>.*)$"
+    }
+  ]
 }
