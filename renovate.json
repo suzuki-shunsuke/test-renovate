@@ -13,9 +13,9 @@
         " +['\"]?version['\"]? *: +['\"]?kustomize/(?<currentValue>[^'\" \\n]+)['\"]? +# renovate: depName=kubernetes-sigs/kustomize[ \\n]",
         " +['\"]?name['\"]? *: +['\"]?kubernetes-sigs/kustomize@kustomize/(?<currentValue>[^'\" \\n]+)['\"]?"
       ],
-      "extractVersionTemplate": "^go(?<version>.*)$",
+      "extractVersionTemplate": "^kustomize/(?<version>.*)$",
       "datasourceTemplate": "github-releases",
-      "depNameTemplate": "golang/go"
+      "depNameTemplate": "kubernetes-sigs/kustomize"
     }
   ]
 }
