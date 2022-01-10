@@ -12,4 +12,4 @@ jobs:
         run: "false"
       - uses: aquaproj/aqua-installer@feat/run-aqua-install
         with:
-          aqua_version: v0.8.6 # use old version for test
+          aqua_version: v0.10.0 # use old version for test
