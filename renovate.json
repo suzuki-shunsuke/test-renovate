@@ -11,7 +11,6 @@
     {
       "fileMatch": [".*/\\.tflint\\.hcl$", "^\\.tflint\\.hcl$"],
       "matchStrings": [
-        "(?<currentValue>[^ '\"]+) +# renovate: depName=(?<depName>.*?)\\n",
         "\"(?<currentValue>[^ '\"]+?)\" +# renovate: depName=(?<depName>.*?)\\n",
         "'(?<currentValue>[^ '\"]+?)' +# renovate: depName=(?<depName>.*?)\\n"
       ],
