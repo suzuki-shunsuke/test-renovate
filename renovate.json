@@ -1,21 +1,10 @@
 {
   "extends": [
     "config:base",
-    "github>aquaproj/aqua-renovate-config"
+    "github>suzuki-shunsuke/renovate-config:tflint#0.1.2"
   ],
   "enabledManagers": ["regex"],
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
-  "branchConcurrentLimit": 0,
-  "regexManagers": [
-    {
-      "fileMatch": [".*/\\.tflint\\.hcl$", "^\\.tflint\\.hcl$"],
-      "matchStrings": [
-        "\"(?<currentValue>[^ '\"]+?)\" +# renovate: depName=(?<depName>.*?)\\n",
-        "'(?<currentValue>[^ '\"]+?)' +# renovate: depName=(?<depName>.*?)\\n"
-      ],
-      "datasourceTemplate": "github-releases",
-      "extractVersionTemplate": "^v(?<version>.*)$"
-    }
-  ]
+  "branchConcurrentLimit": 0
 }
