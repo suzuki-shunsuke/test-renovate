@@ -6,5 +6,15 @@
   "enabledManagers": ["regex"],
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
-  "branchConcurrentLimit": 0
+  "branchConcurrentLimit": 0,
+  "regexManagers": [
+    {
+      "fileMatch": [".*/\\.tflint\\.hcl$", "^\\.tflint\\.hcl$"],
+      "matchStrings": [
+        "\"?(?<currentValue>.*)\"? # renovate: depName=(?<depName>.*?)\\n"
+      ],
+      "datasourceTemplate": "github-releases",
+      "extractVersionTemplate": "^v(?<version>.*)$"
+    }
+  ]
 }
