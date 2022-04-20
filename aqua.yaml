@@ -5,4 +5,4 @@ registries:
 - type: standard
   ref: v2.6.0 # renovate: depName=aquaproj/aqua-registry
 packages:
-- name: grpc/grpc-go/protoc-gen-go-grpc@cmd/protoc-gen-go-grpc/v1.1.0
+- name: grpc/grpc-go/protoc-gen-go-grpc@cmd/protoc-gen-go-grpc/v1.2.0
