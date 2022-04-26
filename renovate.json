@@ -8,6 +8,6 @@
   "prConcurrentLimit": 0,
   "branchConcurrentLimit": 0,
   "prBodyNotes": [
-    "<!-- {\"packageFileDir\": \"{{packageFileDir}}\", \"packageName\": \"{{packageName}}\", \"groupName\": \"{{groupName}}\", \"depName\": \"{{depName}}\", \"manager\": \"{{manager}}\", \"updateType\": \"{{updateType}}\"} -->"
+    "<!-- {\"packageFileDir\": \"{{packageFileDir}}\", \"packageName\": \"{{packageName}}\", \"groupName\": \"{{groupName}}\"} -->"
   ]
 }
