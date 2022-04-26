@@ -5,3 +5,6 @@ registries:
 - type: standard
   ref: v2.6.0 # renovate: depName=aquaproj/aqua-registry
 packages:
+- name: orf/gping@gping-v1.3.0
+- name: orf/gping
+  version: gping-v1.3.0 # renovate: depName=orf/gping
