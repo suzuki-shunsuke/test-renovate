@@ -7,7 +7,16 @@
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
   "branchConcurrentLimit": 0,
-  "prBodyNotes": [
-    "<!-- {\"packageFileDir\": \"{{packageFileDir}}\", \"packageName\": \"{{packageName}}\", \"groupName\": \"{{groupName}}\"} -->"
+  "regexManagers": [
+    {
+      "fileMatch": ["\\.?aqua\\.ya?ml"],
+      "matchStrings": [
+        " +['\"]?version['\"]? *: +['\"]?(?<currentValue>[^'\" \\n]+)['\"]? +# renovate: depName=golang/go[ \\n]",
+        " +['\"]?name['\"]? *: +['\"]?golang/go@(?<currentValue>[^'\" \\n]+)['\"]?"
+      ],
+      "extractVersionTemplate": "^go(?<version>.*)$",
+      "datasourceTemplate": "github-tags",
+      "depNameTemplate": "golang/go"
+    }
   ]
 }
