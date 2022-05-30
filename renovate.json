@@ -1,21 +1,10 @@
 {
   "extends": [
-    "config:base"
+    "config:base",
+    "github>aquaproj/aqua-renovate-config#feat/support-gopls"
   ],
   "enabledManagers": ["regex"],
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
-  "branchConcurrentLimit": 0,
-  "regexManagers": [
-    {
-      "fileMatch": ["\\.?aqua\\.ya?ml"],
-      "matchStrings": [
-        " +['\"]?version['\"]? *: +['\"]?(go)?(?<currentValue>[^'\" \\n]+)['\"]? +# renovate: depName=golang/go[ \\n]",
-        " +['\"]?name['\"]? *: +['\"]?golang/go@(go)?(?<currentValue>[^'\" \\n]+)['\"]?"
-      ],
-      "extractVersionTemplate": "^go(?<version>.*)$",
-      "datasourceTemplate": "github-tags",
-      "depNameTemplate": "golang/go"
-    }
-  ]
+  "branchConcurrentLimit": 0
 }
