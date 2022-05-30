@@ -5,6 +5,6 @@ registries:
 - type: standard
   ref: v2.19.0 # renovate: depName=aquaproj/aqua-registry
 packages:
-- name: golang/tools/gopls@gopls/v0.8.1
+- name: golang/tools/gopls@gopls/v0.8.4
 - name: golang/tools/gopls
-  version: gopls/v0.8.1 # renovate: depName=golang/tools/gopls
+  version: gopls/v0.8.4 # renovate: depName=golang/tools/gopls
