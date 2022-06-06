@@ -6,4 +6,4 @@ registries:
   ref: v2.20.1 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: golang.org/x/perf/cmd/benchstat
-  version: 0625e007bf107ed07ba6f0b91a95472fc542d4f5 # renovate: depName=golang.org/x/perf
+  version: 0625e007bf107ed07ba6f0b91a95472fc542d4f5 # renovate: depName=go.googlesource.com/perf
