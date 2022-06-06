@@ -3,8 +3,7 @@
 # https://aquaproj.github.io/
 registries:
 - type: standard
-  ref: v2.19.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v2.20.1 # renovate: depName=aquaproj/aqua-registry
 packages:
-- name: golang/tools/gopls@gopls/v0.8.1
-- name: golang/tools/gopls
-  version: gopls/v0.8.1 # renovate: depName=golang/tools/gopls
+- name: golang.org/x/perf/cmd/benchstat
+  version: 0625e007bf107ed07ba6f0b91a95472fc542d4f5 # renovate: depName=golang.org/x/perf
