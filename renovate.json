@@ -14,7 +14,7 @@
         " +['\"]?name['\"]? *: +['\"]?(?<depName>[^'\" @/\\n]+/[^'\" @/\\n]+)(/[^'\" /@\\n]+)*@(?<currentValue>[^'\" \\n]+)['\"]?"
       ],
       "datasourceTemplate": "git-refs",
-      "versioning": "git"
+      "versioningTemplate": "git"
     }
   ]
 }
