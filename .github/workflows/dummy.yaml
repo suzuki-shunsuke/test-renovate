@@ -1,0 +1,11 @@
+name: dummy
+on:
+  pull_request:
+    branches: [dummy]
+  push:
+    branches: [dummy]
+jobs:
+  conftest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: suzuki-shunsuke/tfaction/setup@v0.5.12-0
