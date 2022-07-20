@@ -1,7 +1,7 @@
 {
   "extends": [
     "config:base",
-    "github>aquaproj/aqua-renovate-config#1.1.0"
+    "github>aquaproj/aqua-renovate-config"
   ],
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
@@ -10,16 +10,6 @@
     {
       "matchManagers": ["github-actions"],
       "versioning": "semver"
-    }
-  ],
-  "regexManagers": [
-    {
-      "fileMatch": ["\\.?aqua\\.ya?ml"],
-      "matchStrings": [
-        " +['\"]?(version|ref)['\"]? *: +['\"]?(?<currentValue>[^'\" \\n]+?)['\"]? +# renovate: depName=(?<depName>[^\\n]+)",
-        " +['\"]?name['\"]? *: +['\"]?(?<depName>[^\\n]+)*@(?<currentValue>[^'\" \\n]+)['\"]?"
-      ],
-      "datasourceTemplate": "go"
     }
   ]
 }
