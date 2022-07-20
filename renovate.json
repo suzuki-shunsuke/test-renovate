@@ -10,7 +10,7 @@
       "matchManagers": ["github-actions"],
       "versioning": "semver"
     }
-  ]
+  ],
   "regexManagers": [
     {
       "fileMatch": ["\\.?aqua\\.ya?ml"],
