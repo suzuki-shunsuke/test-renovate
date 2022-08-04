@@ -5,4 +5,4 @@ registries:
 - type: standard
   ref: v3.21.0
 packages:
-- name: golang/go@go1.18.4
+- name: golang/go@go1.18.5
