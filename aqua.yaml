@@ -7,4 +7,4 @@ registries:
 packages:
 - name: golang.org/x/tools/cmd/goimports@v0.1.10
 - name: golang.org/x/tools@v0.1.10
-- name: suzuki-shunsuke/tfcmt@v3.0.0
+- name: suzuki-shunsuke/tfcmt@v3.3.0
