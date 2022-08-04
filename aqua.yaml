@@ -3,7 +3,7 @@
 # https://aquaproj.github.io/
 registries:
 - type: standard
-  ref: v3.19.0
+  ref: v3.21.0
 packages:
 - name: golang.org/x/tools/cmd/goimports@v0.1.10
-- name: golang.org/x/tools/gopls@v0.8.4
+- name: suzuki-shunsuke/tfcmt@v3.0.0
