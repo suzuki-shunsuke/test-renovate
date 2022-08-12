@@ -1,7 +1,7 @@
 {
   "extends": [
     "config:base",
-    "github>aquaproj/aqua-renovate-config#feat/set-package-rules"
+    "github>aquaproj/aqua-renovate-config#1.2.3"
   ],
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
