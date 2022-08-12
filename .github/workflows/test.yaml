@@ -8,8 +8,5 @@ jobs:
   conftest:
     runs-on: ubuntu-latest
     steps:
-      - name: fail
-        run: "false"
-      - uses: aquaproj/aqua-installer@feat/run-aqua-install
-        with:
-          aqua_version: v0.8.6 # use old version for test
+      - name: success
+        run: "true"

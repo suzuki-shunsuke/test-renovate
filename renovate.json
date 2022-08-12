@@ -1,7 +1,7 @@
 {
   "extends": [
     "config:base",
-    "github>aquaproj/aqua-renovate-config#fix/remove-ref-from-go-datasource"
+    "github>aquaproj/aqua-renovate-config#feat/set-package-rules"
   ],
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
