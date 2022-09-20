@@ -8,4 +8,4 @@ packages:
   - name: golang/tools/goimports@v0.1.0
   - name: golang/go@go1.18.1
   - name: kubernetes/kubectl@v1.20.0
-  - name: suzuki-shunsuke/tfcmt@v3.0.0
+  - name: suzuki-shunsuke/tfcmt@v3.4.2
