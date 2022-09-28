@@ -1,9 +1,20 @@
 {
   "extends": [
-    "config:base",
-    "github>aquaproj/aqua-renovate-config#1.2.3"
+    "config:base"
   ],
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
-  "branchConcurrentLimit": 0
+  "branchConcurrentLimit": 0,
+  "packageRules": [
+    {
+      "fileMatch": ["\\.?aqua\\.ya?ml"],
+      "matchStrings": [
+        " +['\"]?version['\"]? *: +['\"]?bun-(?<currentValue>[^'\" \\n]+)['\"]? +# renovate: depName=oven-sh/bun[ \\n]",
+        " +['\"]?name['\"]? *: +['\"]?oven-sh/bun@bun-(?<currentValue>[^'\" \\n]+)['\"]?"
+      ],
+      "extractVersionTemplate": "^bun-(?<version>.*)$",
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "oven-sh/bun"
+    }
+  ]
 }
