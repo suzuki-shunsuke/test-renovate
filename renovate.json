@@ -1,6 +1,7 @@
 {
   "extends": [
-    "config:base"
+    "config:base",
+    "github>mikutas/aqua-renovate-config:installer-script#installer-script_aqua_version(install\\.sh)"
   ],
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
