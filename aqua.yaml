@@ -10,5 +10,5 @@ registries:
   type: local
   path: registry.yaml
 packages:
-- name: gitlab:gitlab-org/cli@v1.24.0
+- name: gitlab:gitlab-org/cli@v1.24.1
   registry: local
