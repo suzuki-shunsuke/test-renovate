@@ -1,9 +1,26 @@
 {
   "extends": [
     "config:base",
-    "github>mikutas/aqua-renovate-config:installer-script#installer-script_aqua_version(scripts/.*\\.sh)"
+    "github>aquaproj/aqua-renovate-config#1.3.0"
   ],
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
-  "branchConcurrentLimit": 0
+  "branchConcurrentLimit": 0,
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["^gitlab:"],
+      "matchManagers": ["regex"],
+      "matchDatasources": ["github-releases"],
+      "enabled": false
+    }
+  ],
+  "regexManagers": [
+    {
+      "fileMatch": ["\\.?aqua\\.ya?ml"],
+      "matchStrings": [
+        " +['\"]?name['\"]? *: +['\"]?gitlab:(?<depName>[^'\" .@/\\n]+/[^'\" @/\\n]+)(/[^'\" /@\\n]+)*@(?<currentValue>[^'\" \\n]+)['\"]?"
+      ],
+      "datasourceTemplate": "gitlab-releases"
+    }
+  ]
 }
