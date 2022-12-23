@@ -10,3 +10,11 @@ registries:
   ref: 215b5f5aaaf9d1337b93780c13202e1434ed2c98 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: ipinfo/cli@ipinfo-2.9.0
+- name: ipinfo/cli/cidr2ip@cidr2ip-0.9.0
+- name: ipinfo/cli/cidr2range@cidr2range-1.0.0
+- name: ipinfo/cli/range2cidr@range2cidr-1.0.0
+- name: ipinfo/cli/prips@prips-0.9.0
+- name: ipinfo/cli/splitcidr@splitcidr-0.9.0
+- name: ipinfo/cli/randip@randip-1.0.0
+- name: ipinfo/cli/grepip@grepip-1.0.0
+- name: ipinfo/cli/range2ip@range2ip-0.9.0

@@ -17,6 +17,17 @@
       "extractVersionTemplate": "^ipinfo-(?<version>.*)$",
       "datasourceTemplate": "github-releases",
       "depNameTemplate": "ipinfo/cli"
+    },
+    {
+      "fileMatch": ["\\.?aqua\\.ya?ml"],
+      "matchStrings": [
+        " +['\"]?version['\"]? *: +['\"]?cidr2ip-(?<currentValue>[^'\" \\n]+)['\"]? +# renovate: depName=ipinfo/cli/cidr2ip[ \\n]",
+        " +['\"]?name['\"]? *: +['\"]?ipinfo/cli/cidr2ip@cidr2ip-(?<currentValue>[^'\" \\n]+)['\"]?"
+      ],
+      "extractVersionTemplate": "^cidr2ip-(?<version>.*)$",
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "ipinfo/cli/cidr2ip",
+      "packageNameTemplate": "ipinfo/cli"
     }
   ]
 }
