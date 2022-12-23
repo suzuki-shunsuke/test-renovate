@@ -9,4 +9,4 @@ registries:
 - type: standard
   ref: 215b5f5aaaf9d1337b93780c13202e1434ed2c98 # renovate: depName=aquaproj/aqua-registry
 packages:
-- name: mongodb/mongodb-atlas-cli/atlascli@atlascli/v1.3.0
+- name: mongodb/mongodb-atlas-cli/atlascli@atlascli/v1.4.0
