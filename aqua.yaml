@@ -17,4 +17,4 @@ packages:
 - name: ipinfo/cli/splitcidr@splitcidr-0.9.0
 - name: ipinfo/cli/randip@randip-1.0.0
 - name: ipinfo/cli/grepip@grepip-1.0.0
-- name: ipinfo/cli/range2ip@range2ip-0.9.0
+- name: ipinfo/cli/range2ip@range2ip-1.0.0
