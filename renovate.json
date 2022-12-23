@@ -1,17 +1,16 @@
 {
   "extends": [
     "config:base",
-    "helpers:pinGitHubActionDigests",
-    "github>aquaproj/aqua-renovate-config#1.3.0"
+    "helpers:pinGitHubActionDigests"
   ],
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
   "branchConcurrentLimit": 0,
   "regexManagers": [
     {
-      "fileMatch": ["\\.?aqua\\.ya?ml"],
+      "fileMatch": ["hello.txt"],
       "matchStrings": [
-        " +['\"]?(ref)['\"]? *: +['\"]?(?<currentDigest>[^'\" \\n]+?)['\"]? +# renovate: tag=(?<currentValue>[^'\" \\n]+?) depName=(?<depName>[^\\n]+)"
+        "(?<depName>[^\\n]+),(?<currentDigest>[^'\" \\n]+?),(?<currentValue>[^'\" \\n]+?)"
       ],
       "datasourceTemplate": "github-releases"
     }
