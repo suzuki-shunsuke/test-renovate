@@ -1,8 +1,7 @@
 {
   "extends": [
     "config:base",
-    "helpers:pinGitHubActionDigests",
-    "github>aquaproj/aqua-renovate-config#1.3.0"
+    "helpers:pinGitHubActionDigests"
   ],
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
