@@ -10,7 +10,7 @@
     {
       "fileMatch": ["hello.txt"],
       "matchStrings": [
-        "(?<depName>[^\\n]+),(?<currentDigest>[^'\" \\n]+?),(?<currentValue>[^'\" \\n]+?)"
+        "(?<depName>[^\\n]+),(?<currentDigest>[^'\" \\n]+?),(?<currentValue>[^'\" \\n]+?)\\n"
       ],
       "datasourceTemplate": "github-releases"
     }
