@@ -11,12 +11,13 @@
     {
       "fileMatch": ["\\.?aqua\\.ya?ml"],
       "matchStrings": [
-        " +['\"]?version['\"]? *: +['\"]?ipinfo-(?<currentValue>[^'\" \\n]+)['\"]? +# renovate: depName=ipinfo/cli[ \\n]",
-        " +['\"]?name['\"]? *: +['\"]?ipinfo/cli@ipinfo-(?<currentValue>[^'\" \\n]+)['\"]?"
+        " +['\"]?version['\"]? *: +['\"]?atlascli/(?<currentValue>[^'\" \\n]+)['\"]? +# renovate: depName=mongodb/mongodb-atlas-cli/atlascli[ \\n]",
+        " +['\"]?name['\"]? *: +['\"]?mongodb/mongodb-atlas-cli/atlascli@atlascli/(?<currentValue>[^'\" \\n]+)['\"]?"
       ],
-      "extractVersionTemplate": "^ipinfo-(?<version>.*)$",
+      "extractVersionTemplate": "^atlascli/(?<version>.*)$",
       "datasourceTemplate": "github-releases",
-      "depNameTemplate": "ipinfo/cli"
+      "depNameTemplate": "mongodb/mongodb-atlas-cli/atlascli",
+      "packageNameTemplate": "mongodb/mongodb-atlas-cli"
     }
   ]
 }
