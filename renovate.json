@@ -1,16 +1,15 @@
 {
   "extends": [
-    "config:base",
-    "helpers:pinGitHubActionDigests"
+    "config:base"
   ],
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
   "branchConcurrentLimit": 0,
   "regexManagers": [
     {
-      "fileMatch": ["hello.txt"],
+      "fileMatch": ["hello\\.txt"],
       "matchStrings": [
-        "(?<depName>[^\\n]+),(?<currentDigest>[^'\" \\n]+?),(?<currentValue>[^'\" \\n]+?)\\n"
+        "(?<depName>[^,]+),(?<currentDigest>[^,]+?),(?<currentValue>[^,]+?)\\n"
       ],
       "datasourceTemplate": "github-releases"
     }
