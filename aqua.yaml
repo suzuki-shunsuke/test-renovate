@@ -6,9 +6,7 @@
 #   enabled: true
 #   require_checksum: true
 registries:
-- name: local
-  type: local
-  path: registry.yaml
+- type: standard
+  ref: 215b5f5aaaf9d1337b93780c13202e1434ed2c98 # renovate: depName=aquaproj/aqua-registry
 packages:
-- name: gitlab:gitlab-org/cli@v1.24.0
-  registry: local
+- name: ipinfo/cli@ipinfo-2.9.0
