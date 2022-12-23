@@ -11,13 +11,9 @@
     {
       "fileMatch": ["\\.?aqua\\.ya?ml"],
       "matchStrings": [
-        " +['\"]?version['\"]? *: +['\"]?atlascli/(?<currentValue>[^'\" \\n]+)['\"]? +# renovate: depName=mongodb/mongodb-atlas-cli/atlascli[ \\n]",
-        " +['\"]?name['\"]? *: +['\"]?mongodb/mongodb-atlas-cli/atlascli@atlascli/(?<currentValue>[^'\" \\n]+)['\"]?"
+        " +['\"]?(ref)['\"]? *: +['\"]?(?<currentDigest>[^'\" \\n]+?)['\"]? +# renovate: tag=(?<currentValue>[^'\" \\n]+?) depName=(?<depName>[^\\n]+)"
       ],
-      "extractVersionTemplate": "^atlascli/(?<version>.*)$",
-      "datasourceTemplate": "github-releases",
-      "depNameTemplate": "mongodb/mongodb-atlas-cli/atlascli",
-      "packageNameTemplate": "mongodb/mongodb-atlas-cli"
+      "datasourceTemplate": "github-releases"
     }
   ]
 }
