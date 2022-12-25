@@ -7,6 +7,6 @@
 #   require_checksum: true
 registries:
 - type: standard
-  ref: v3.107.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v3.108.0 # renovate: depName=aquaproj/aqua-registry
 packages:
-- name: GoogleCloudPlatform/terraformer/aws@0.8.20
+- name: kubernetes/kubectl-convert@v1.25.0

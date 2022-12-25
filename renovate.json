@@ -1,21 +1,9 @@
 {
   "extends": [
     "config:base",
-    "helpers:pinGitHubActionDigests"
+    "github>aquaproj/aqua-renovate-config"
   ],
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
-  "branchConcurrentLimit": 0,
-  "regexManagers": [
-    {
-       "datasourceTemplate": "github-releases",
-       "fileMatch": [
-          "\\.?aqua\\.ya?ml"
-       ],
-       "matchStrings": [
-          " +(?:version|'version'|\"version\") *: +['\"]?(?<currentValue>[^'\" \\n]+)['\"]? +# renovate: depName=(?<depName>[^\\n]+)",
-          " +(?:name|'name'|\"name\") *: +['\"]?(?<depName>(?<packageName>[^'\" @/\\n]+/[^'\" @/\\n]+)(/[^'\" /@\\n]+)*)@(?<currentValue>[^'\" \\n]+)['\"]?"
-       ]
-    }
-  ]
+  "branchConcurrentLimit": 0
 }
