@@ -14,7 +14,7 @@
        ],
        "matchStrings": [
           " +(?:version|'version'|\"version\") *: +['\"]?(?<currentValue>[^'\" \\n]+)['\"]? +# renovate: depName=(?<depName>[^\\n]+)",
-          " +(?:name|'name'|\"name\") *: +['\"]?(?<depName>[^'\" @/\\n]+/[^'\" @/\\n]+)(/[^'\" /@\\n]+)*@(?<currentValue>[^'\" \\n]+)['\"]?"
+          " +(?:name|'name'|\"name\") *: +['\"]?(?<depName>(?<packageName>[^'\" @/\\n]+/[^'\" @/\\n]+)(/[^'\" /@\\n]+)*)@(?<currentValue>[^'\" \\n]+)['\"]?"
        ]
     }
   ]
