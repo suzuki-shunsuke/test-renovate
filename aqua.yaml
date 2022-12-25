@@ -9,4 +9,4 @@ registries:
 - type: standard
   ref: v3.107.0 # renovate: depName=aquaproj/aqua-registry
 packages:
-- name: GoogleCloudPlatform/terraformer/aws@0.8.20
+- name: GoogleCloudPlatform/terraformer/aws@0.8.22
