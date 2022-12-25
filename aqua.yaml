@@ -9,9 +9,4 @@ registries:
 - type: standard
   ref: v3.107.0 # renovate: depName=aquaproj/aqua-registry
 packages:
-- name: ipinfo/cli/prips
-  version: prips-0.9.0 # renovate: depName=ipinfo/cli/prips
-- name: ipinfo/cli/prips
-  'version': prips-0.9.0 # renovate: depName=ipinfo/cli/prips
-- name: ipinfo/cli/prips
-  "version": prips-0.9.0 # renovate: depName=ipinfo/cli/prips
+- name: GoogleCloudPlatform/terraformer/aws@0.8.20

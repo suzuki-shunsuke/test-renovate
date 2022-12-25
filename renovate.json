@@ -7,18 +7,15 @@
   "prConcurrentLimit": 0,
   "branchConcurrentLimit": 0,
   "regexManagers": [
-      {
-         "datasourceTemplate": "github-releases",
-         "depNameTemplate": "ipinfo/cli/prips",
-         "extractVersionTemplate": "^prips-(?<version>.*)$",
-         "fileMatch": [
-            "\\.?aqua\\.ya?ml"
-         ],
-         "matchStrings": [
-            " +(?:version|'version'|\"version\") *: +['\"]?prips-(?<currentValue>[^'\" \\n]+)['\"]? +# renovate: depName=ipinfo/cli/prips[ \\n]",
-            " +['\"]?name['\"]? *: +['\"]?ipinfo/cli/prips@prips-(?<currentValue>[^'\" \\n]+)['\"]?"
-         ],
-         "packageNameTemplate": "ipinfo/cli"
-      }
+    {
+       "datasourceTemplate": "github-releases",
+       "fileMatch": [
+          "\\.?aqua\\.ya?ml"
+       ],
+       "matchStrings": [
+          " +(?:version|'version'|\"version\") *: +['\"]?(?<currentValue>[^'\" \\n]+)['\"]? +# renovate: depName=(?<depName>[^\\n]+)",
+          " +(?:name|'name'|\"name\") *: +['\"]?(?<depName>[^'\" @/\\n]+/[^'\" @/\\n]+)(/[^'\" /@\\n]+)*@(?<currentValue>[^'\" \\n]+)['\"]?"
+       ]
+    }
   ]
 }
