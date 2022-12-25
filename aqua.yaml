@@ -11,3 +11,7 @@ registries:
 packages:
 - name: 1xyz/pryrite
   version: 0.10.19
+- name: 1xyz/pryrite
+  "version": 0.10.19
+- name: 1xyz/pryrite
+  'version': 0.10.19
