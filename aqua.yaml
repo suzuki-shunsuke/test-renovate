@@ -7,11 +7,11 @@
 #   require_checksum: true
 registries:
 - type: standard
-  ref: f83e6465256285517e393b149e0458b3cbee7928 # renovate: tag=v3.106.0 depName=aquaproj/aqua-registry
+  ref: v3.107.0 # renovate: depName=aquaproj/aqua-registry
 packages:
-- name: 1xyz/pryrite
-  version: 0.10.19
-- name: 1xyz/pryrite
-  "version": 0.10.19
-- name: 1xyz/pryrite
-  'version': 0.10.19
+- name: ipinfo/cli/prips
+  version: prips-0.9.0 # renovate: depName=ipinfo/cli/prips
+- name: ipinfo/cli/prips
+  'version': prips-0.9.0 # renovate: depName=ipinfo/cli/prips
+- name: ipinfo/cli/prips
+  "version": prips-0.9.0 # renovate: depName=ipinfo/cli/prips
