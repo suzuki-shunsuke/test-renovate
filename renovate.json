@@ -6,4 +6,17 @@
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
   "branchConcurrentLimit": 0
+  "packageRules": [
+    {
+      "matchPackageNames": ["kubernetes/kubectl-convert"],
+      "enabled": false,
+      "matchManagers": ["regex"],
+      "matchPaths": [
+        ".aqua.yaml",
+        ".aqua.yml",
+        "aqua.yaml",
+        "aqua.yml"
+      ]
+    }
+  ]
 }
