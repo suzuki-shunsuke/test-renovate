@@ -9,4 +9,4 @@ registries:
 - type: standard
   ref: v3.108.0 # renovate: depName=aquaproj/aqua-registry
 packages:
-- name: kubernetes/kubectl-convert@v1.25.0
+- name: kubernetes/kubectl-convert@v1.26.0
