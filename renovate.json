@@ -1,21 +1,10 @@
 {
   "extends": [
-    "config:base"
+    "config:base",
+    "github>aquaproj/aqua-renovate-config"
   ],
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
   "branchConcurrentLimit": 0,
-  "regexManagers": [
-    {
-       "datasourceTemplate": "github-tags",
-       "fileMatch": [
-          "\\.?aqua\\.ya?ml"
-       ],
-       "matchStrings": [
-          " +(?:ref|'ref'|\"ref\") *: +(?<currentDigest>[^'\" \\n]+) +# renovate:( +tag=(?<currentValue>[^'\" \\n]+))? +depName=(?<depName>(?<packageName>[^'\" .@/\\n]+/[^'\" @/\\n]+)(/[^'\" /@\\n]+)*)",
-          " +(?:ref|'ref'|\"ref\") *: +'(?<currentDigest>[^'\" \\n]+)' +# renovate:( +tag=(?<currentValue>[^'\" \\n]+))? +depName=(?<depName>(?<packageName>[^'\" .@/\\n]+/[^'\" @/\\n]+)(/[^'\" /@\\n]+)*)",
-          " +(?:ref|'ref'|\"ref\") *: +\"(?<currentDigest>[^'\" \\n]+)\" +# renovate:( +tag=(?<currentValue>[^'\" \\n]+))? +depName=(?<depName>(?<packageName>[^'\" .@/\\n]+/[^'\" @/\\n]+)(/[^'\" /@\\n]+)*)"
-       ]
-    }
-  ]
+  "enabledManagers": ["regex"]
 }

@@ -7,7 +7,32 @@
 #   require_checksum: true
 registries:
 - type: standard
+  ref: v3.108.0 # renovate: depName=aquaproj/aqua-registry
+- name: digest
+  type: github_content
+  repo_owner: aquaproj
+  repo_name: aqua-registry
   ref: 215b5f5aaaf9d1337b93780c13202e1434ed2c98 # renovate: tag=v3.107.0 depName=aquaproj/aqua-registry
-- type: standard
-  ref: 215b5f5aaaf9d1337b93780c13202e1434ed2c98 # renovate: depName=aquaproj/aqua-registry
+  path: registry.yaml
+- name: digest_single
+  type: github_content
+  repo_owner: aquaproj
+  repo_name: aqua-registry
+  ref: '215b5f5aaaf9d1337b93780c13202e1434ed2c98' # renovate: tag=v3.107.0 depName=aquaproj/aqua-registry
+  path: registry.yaml
+- name: digest_double
+  type: github_content
+  repo_owner: aquaproj
+  repo_name: aqua-registry
+  ref: "215b5f5aaaf9d1337b93780c13202e1434ed2c98" # renovate: tag=v3.107.0 depName=aquaproj/aqua-registry
+  path: registry.yaml
 packages:
+- name: aquaproj/aqua-installer@c553e04154f1f3b7e5eb35da058db3bb782bee8a # renovate: tag=v1.1.2
+- name: 'aquaproj/aqua-installer@c553e04154f1f3b7e5eb35da058db3bb782bee8a' # renovate: tag=v1.1.2
+- name: "aquaproj/aqua-installer@c553e04154f1f3b7e5eb35da058db3bb782bee8a" # renovate: tag=v1.1.2
+- name: aquaproj/aqua-installer
+  version: c553e04154f1f3b7e5eb35da058db3bb782bee8a # renovate: tag=v1.1.2
+- name: aquaproj/aqua-installer
+  version: 'c553e04154f1f3b7e5eb35da058db3bb782bee8a' # renovate: tag=v1.1.2
+- name: aquaproj/aqua-installer
+  version: "c553e04154f1f3b7e5eb35da058db3bb782bee8a" # renovate: tag=v1.1.2
