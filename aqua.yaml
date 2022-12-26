@@ -7,7 +7,7 @@
 #   require_checksum: true
 registries:
 - type: standard
-  ref: 215b5f5aaaf9d1337b93780c13202e1434ed2c98 # renovate: tag=v3.107.0 depName=aquaproj/aqua-registry
+  ref: 561d28973562af288b2c6aaa300a2b3be75e92db # renovate: tag=v3.108.0 depName=aquaproj/aqua-registry
 - type: standard
   ref: 215b5f5aaaf9d1337b93780c13202e1434ed2c98 # renovate: depName=aquaproj/aqua-registry
 packages:
