@@ -8,4 +8,6 @@
 registries:
 - type: standard
   ref: 215b5f5aaaf9d1337b93780c13202e1434ed2c98 # renovate: tag=v3.107.0 depName=aquaproj/aqua-registry
+- type: standard
+  ref: 215b5f5aaaf9d1337b93780c13202e1434ed2c98 # renovate: depName=aquaproj/aqua-registry
 packages:
