@@ -1,22 +1,21 @@
 {
   "extends": [
-    "config:base",
-    "github>aquaproj/aqua-renovate-config"
+    "config:base"
   ],
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
   "branchConcurrentLimit": 0,
-  "packageRules": [
+  "regexManagers": [
     {
-      "matchPackageNames": ["kubernetes/kubectl-convert"],
-      "enabled": false,
-      "matchManagers": ["regex"],
-      "matchPaths": [
-        ".aqua.yaml",
-        ".aqua.yml",
-        "aqua.yaml",
-        "aqua.yml"
-      ]
+       "datasourceTemplate": "github-tags",
+       "fileMatch": [
+          "\\.?aqua\\.ya?ml"
+       ],
+       "matchStrings": [
+          " +(?:ref|'ref'|\"ref\") *: +(?<currentDigest>[^'\" \\n]+) +# renovate:( +tag=(?<currentValue>[^'\" \\n]+))? +depName=(?<depName>(?<packageName>[^'\" .@/\\n]+/[^'\" @/\\n]+)(/[^'\" /@\\n]+)*)",
+          " +(?:ref|'ref'|\"ref\") *: +'(?<currentDigest>[^'\" \\n]+)' +# renovate:( +tag=(?<currentValue>[^'\" \\n]+))? +depName=(?<depName>(?<packageName>[^'\" .@/\\n]+/[^'\" @/\\n]+)(/[^'\" /@\\n]+)*)",
+          " +(?:ref|'ref'|\"ref\") *: +\"(?<currentDigest>[^'\" \\n]+)\" +# renovate:( +tag=(?<currentValue>[^'\" \\n]+))? +depName=(?<depName>(?<packageName>[^'\" .@/\\n]+/[^'\" @/\\n]+)(/[^'\" /@\\n]+)*)"
+       ]
     }
   ]
 }

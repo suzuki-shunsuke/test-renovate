@@ -7,6 +7,5 @@
 #   require_checksum: true
 registries:
 - type: standard
-  ref: v3.108.0 # renovate: depName=aquaproj/aqua-registry
+  ref: 215b5f5aaaf9d1337b93780c13202e1434ed2c98 # renovate: tag=v3.107.0 depName=aquaproj/aqua-registry
 packages:
-- name: kubernetes/kubectl-convert@v1.25.0
