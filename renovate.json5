@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "config:base",
+    "github>suzuki-shunsuke/renovate-config:nolimit#1.0.0"
+  ],
+  regexManagers: [
+    {
+      fileMatch: [
+        "^\\.github/workflows/.*\\.ya?ml$",
+        "^\\.github/actions/.*\\.ya?ml$",
+      ],
+      depNameTemplate: "golang/go",
+      datasourceTemplate: "github-tags",
+      extractVersionTemplate: "^go(?<version>.*)$",
+      matchStrings: [
+        "go-version: (?<currentValue>.*)",
+        "go-version: '(?<currentValue>.*)'",
+        'go-version: "(?<currentValue>.*)"',
+      ],
+    },
+  ],
+}

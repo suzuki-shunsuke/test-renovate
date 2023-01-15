@@ -1,13 +1,14 @@
 name: test
 on:
   pull_request:
-    branches: [master]
+    branches: [dummy]
   push:
-    branches: [master]
+    branches: [dummy]
 jobs:
   conftest:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8 # tag=v3.0.0
-      - name: success
-        run: "true"
+      - uses: actions/setup-go@6edd4406fa81c3da01a34fa6f6343087c207a568 # v3.5.0
+        with:
+          go-version: "1.19.0"
+          cache: true

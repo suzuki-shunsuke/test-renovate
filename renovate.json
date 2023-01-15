@@ -1,9 +1,0 @@
-{
-  "extends": [
-    "config:base",
-    "github>aquaproj/aqua-renovate-config"
-  ],
-  "prHourlyLimit": 0,
-  "prConcurrentLimit": 0,
-  "branchConcurrentLimit": 0
-}
