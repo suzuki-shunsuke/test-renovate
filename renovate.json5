@@ -1,8 +1,9 @@
 {
   "extends": [
     "config:base",
-    "github>suzuki-shunsuke/renovate-config:nolimit#1.0.0",
-    "github>suzuki-shunsuke/renovate-config#1.0.0",
+    "github>aquaproj/aqua-renovate-config#1.5.0",
+    "github>aquaproj/aqua-renovate-config:base#1.5.0",
+    "github>aquaproj/aqua-renovate-config:file(aqua.yaml)#1.5.0",
   ],
   regexManagers: [
     {
@@ -14,7 +15,7 @@
         "^\\.renovaterc$",
       ],
       matchStrings: [
-        "\"github>(?<depName>(?<packageName>[^/:# \\n]+/[^/:# \\n]+)[^# \\n]*)#(?<currentValue>[^\" \\n\\(]+)",
+        "\"github>(?<depName>(?<packageName>[^/:# \\n]+/[^/:# \\n]+)[^#() \\n]*)(\(.+\))?#(?<currentValue>[^\" \\n\\(]+)\"",
       ],
       datasourceTemplate: "github-releases",
     },
