@@ -1,22 +1,22 @@
 {
   "extends": [
     "config:base",
-    "github>suzuki-shunsuke/renovate-config:nolimit#1.0.0"
+    "github>suzuki-shunsuke/renovate-config:nolimit#1.0.0",
+    "github>suzuki-shunsuke/renovate-config#1.0.0",
   ],
   regexManagers: [
     {
       fileMatch: [
-        "^\\.github/workflows/.*\\.ya?ml$",
-        "^\\.github/actions/.*\\.ya?ml$",
+        "^renovate\\.json5?$",
+        "^\\.github/renovate\\.json5?$",
+        "^\\.gitlab/renovate\\.json5?$",
+        "^\\.renovaterc\\.json$",
+        "^\\.renovaterc$",
       ],
-      depNameTemplate: "golang/go",
-      datasourceTemplate: "github-tags",
-      extractVersionTemplate: "^go(?<version>.*)$",
       matchStrings: [
-        "go-version: (?<currentValue>.*)",
-        "go-version: '(?<currentValue>.*)'",
-        'go-version: "(?<currentValue>.*)"',
+        "\"github>(?<depName>(?<packageName>[^/:# \\n]+/[^/:# \\n]+)[^# \\n]*)#(?<currentValue>[^\" \\n\\(]+)",
       ],
+      datasourceTemplate: "github-releases",
     },
   ],
 }
