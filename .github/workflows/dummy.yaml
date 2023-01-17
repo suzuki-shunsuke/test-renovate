@@ -8,4 +8,4 @@ jobs:
   conftest:
     runs-on: ubuntu-latest
     steps:
-      - uses: suzuki-shunsuke/tfaction/setup@v0.5.12-0
+      - uses: suzuki-shunsuke/tfaction/setup@2facef52f4c67aa7e6e477b28650d4be2c64cbc7 # v0.5.20
