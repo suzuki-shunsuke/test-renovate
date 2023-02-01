@@ -1,24 +1,29 @@
 {
-  "extends": [
+  extends: [
     "config:base",
-    "github>aquaproj/aqua-renovate-config#1.5.0",
-    "github>aquaproj/aqua-renovate-config:base#1.5.0",
-    "github>aquaproj/aqua-renovate-config:file#1.5.0(aqua\\.yaml)",
     "github>suzuki-shunsuke/renovate-config:nolimit#1.1.0",
+  ],
+  packageRules: [
+    {
+      // Group Docker image's golang and GitHub Actions' go-version
+      matchPackagePatterns: ["^golang"],
+      groupName: "golang",
+    },
   ],
   regexManagers: [
     {
       fileMatch: [
-        "^renovate\\.json5?$",
-        "^\\.github/renovate\\.json5?$",
-        "^\\.gitlab/renovate\\.json5?$",
-        "^\\.renovaterc\\.json$",
-        "^\\.renovaterc$",
+        "^\\.github/workflows/.*\\.ya?ml$",
+        "^\\.github/actions/.*\\.ya?ml$",
       ],
+      depNameTemplate: "golang/go",
+      datasourceTemplate: "github-tags",
+      extractVersionTemplate: "^go(?<version>.*)$",
       matchStrings: [
-        "\"github>(?<depName>(?<packageName>[^/:# \\n]+/[^/:# \\n]+)[^#() \\n]*)#(?<currentValue>[^\" \\n\\(]+)",
+        "go-version: (?<currentValue>.*)",
+        "go-version: '(?<currentValue>.*)'",
+        'go-version: "(?<currentValue>.*)"',
       ],
-      datasourceTemplate: "github-releases",
     },
   ],
 }
