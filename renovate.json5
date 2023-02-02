@@ -2,6 +2,7 @@
   extends: [
     "config:base",
     "github>suzuki-shunsuke/renovate-config:nolimit#1.1.0",
+    "github>aquaproj/aqua-renovate-config#1.5.1",
   ],
   // separateMinorPatch: true,
   packageRules: [
