@@ -3,7 +3,15 @@
     "config:base",
     "github>suzuki-shunsuke/renovate-config:nolimit#1.1.0",
   ],
-  separateMinorPatch: true,
+  // separateMinorPatch: true,
+  packageRules: [
+    {
+      matchPackageNames: [
+        "golang/go",
+      ],
+      separateMinorPatch: true,
+    },
+  ],
   regexManagers: [
       {
          "datasourceTemplate": "github-tags",
