@@ -10,6 +10,6 @@ registries:
     ref: v3.127.0 # renovate: depName=aquaproj/aqua-registry
 packages:
   - name: golang/go@go1.19
-  - name: golang/go@go1.18.8
+  - name: golang/go@go1.18.10
   - name: golang/go@go1.19.5
   - name: suzuki-shunsuke/tfcmt@v4.0.0
