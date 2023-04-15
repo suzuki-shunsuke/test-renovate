@@ -7,6 +7,6 @@
 #   require_checksum: true
 registries:
   - type: standard
-    ref: v3.145.0 # renovate: depName=aquaproj/aqua-registry
+    ref: v3.154.0 # renovate: depName=aquaproj/aqua-registry
 packages:
-- name: datreeio/datree@1.8.33
+- name: golang.org/x/tools/cmd/goyacc@v0.7.0
