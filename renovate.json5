@@ -6,8 +6,8 @@
   ],
   "packageRules": [
      {
-        "matchManagers": [
-           "gomod"
+        "matchDatasources": [
+           "go"
         ],
         "postUpdateOptions": [
            "gomodUpdateImportPaths"
