@@ -4,18 +4,14 @@
     "github>suzuki-shunsuke/renovate-config:nolimit#2.0.0",
     "github>aquaproj/aqua-renovate-config#1.5.2",
   ],
-  "regexManagers": [
-    {
-      "datasourceTemplate": "github-releases",
-      "depNameTemplate": "google/go-github",
-      // "versioningTemplate": "regex:^v(?<major>\\d+)$",
-      // "extractVersionTemplate": "^v(?<version>\\d+)",
-      "matchStrings": [
-        "\"github\\.com/google/go-github/(?<currentValue>v\\d+)/github\"$"
-      ],
-      "fileMatch": [
-         "^.*\\.go$"
-      ],
-    }
+  "packageRules": [
+     {
+        "matchManagers": [
+           "gomod"
+        ],
+        "postUpdateOptions": [
+           "gomodUpdateImportPaths"
+        ]
+     }
   ]
 }
