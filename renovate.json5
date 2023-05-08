@@ -7,7 +7,7 @@
   "regexManagers": [
     {
       "datasourceTemplate": "github-releases",
-      "depNameTemplate": "github.com/google/go-github",
+      "depNameTemplate": "google/go-github",
       // "versioningTemplate": "regex:^v(?<major>\\d+)$",
       // "extractVersionTemplate": "^v(?<version>\\d+)",
       "matchStrings": [
