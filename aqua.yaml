@@ -7,6 +7,6 @@
 #   require_checksum: true
 registries:
   - type: standard
-    ref: v3.154.0 # renovate: depName=aquaproj/aqua-registry
+    ref: v3.157.0 # renovate: depName=aquaproj/aqua-registry
 packages:
-- name: golang.org/x/tools/cmd/goyacc@v0.7.0
+- name: hashicorp/terraform@v1.4.5
