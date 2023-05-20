@@ -10,6 +10,7 @@
 	    "crate\\.txt",
          ],
 	 "depNameTemplate": "skim",
+	 "versioningTemplate": "semver",
          "matchStrings": [
 	    "skim (?<currentValue>[^'\" \\n]+)",
          ],
