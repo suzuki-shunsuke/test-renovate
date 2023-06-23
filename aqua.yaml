@@ -4,4 +4,4 @@ registries:
 packages:
 - name: hashicorp/terraform@v1.4.0
 - name: crates.io/skim@0.10.1
-- name: golang.org/x/tools/gopls@v0.10.1
+- name: golang.org/x/tools/gopls@v0.12.4
