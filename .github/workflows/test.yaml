@@ -1,0 +1,17 @@
+---
+name: pinact
+
+on: pull_request
+
+env:
+  AQUA_LOG_COLOR: always
+
+permissions: {}
+
+jobs:
+  pinact:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read # To checkout private repository
+    steps:
+      - uses: actions/checkout@dcd71f646680f2efd8db4afa5ad64fdcba30e748 # main
