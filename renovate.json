@@ -3,5 +3,13 @@
       "config:base",
       "github>suzuki-shunsuke/renovate-config#2.1.0",
       "github>suzuki-shunsuke/renovate-config:nolimit#2.1.0"
+   ],
+   "packageRules": [
+     {
+       "enabled": true,
+       "matchUpdateTypes": [
+         "digest"
+       ]
+     }
    ]
 }
