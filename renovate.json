@@ -4,12 +4,20 @@
       "github>suzuki-shunsuke/renovate-config#2.1.0",
       "github>suzuki-shunsuke/renovate-config:nolimit#2.1.0"
    ],
-   "packageRules": [
-     {
-       "enabled": true,
-       "matchUpdateTypes": [
-         "digest"
-       ]
-     }
+   "regexManagers": [
+      {
+         "datasourceTemplate": "pypi",
+         "fileMatch": [
+            "\\.?aqua\\.ya?ml"
+         ],
+         "matchStrings": [
+            " +(?:version|'version'|\"version\") *: +(?<currentValue>[^'\" \\n]+) +# renovate: depName=pypi\\.org/(?<depName>[^\\n]+)",
+            " +(?:version|'version'|\"version\") *: +'(?<currentValue>[^'\" \\n]+)' +# renovate: depName=pypi\\.org/(?<depName>[^\\n]+)",
+            " +(?:version|'version'|\"version\") *: +\"(?<currentValue>[^'\" \\n]+)\" +# renovate: depName=pypi\\.org/(?<depName>[^\\n]+)",
+            " +(?:name|'name'|\"name\") *: +pypi\\.org/(?<depName>[^\\n]+)@(?<currentValue>[^'\" \\n]+)",
+            " +(?:name|'name'|\"name\") *: +'pypi\\.org/(?<depName>[^\\n]+)@(?<currentValue>[^'\" \\n]+)'",
+            " +(?:name|'name'|\"name\") *: +\"pypi\\.org/(?<depName>[^\\n]+)@(?<currentValue>[^'\" \\n]+)\""
+         ]
+      }
    ]
 }
