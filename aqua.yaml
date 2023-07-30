@@ -2,4 +2,4 @@ registries:
   - type: standard
     ref: v3.157.0 # renovate: depName=aquaproj/aqua-registry
 packages:
-  - name: pypi.org/pre-commit@2.0.0
+  - name: pypi.org/pre-commit@2.21.0
