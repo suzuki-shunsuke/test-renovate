@@ -1,5 +1,13 @@
+---
+# aqua - Declarative CLI Version Manager
+# https://aquaproj.github.io/
+# checksum:
+#   enabled: true
+#   require_checksum: true
+#   supported_envs:
+#   - all
 registries:
   - type: standard
-    ref: v3.157.0 # renovate: depName=aquaproj/aqua-registry
+    ref: v4.34.0 # renovate: depName=aquaproj/aqua-registry
 packages:
-  - name: pypi.org/pre-commit@2.21.0
+  - name: awslabs/mountpoint-s3@mountpoint-s3-0.4.1
