@@ -10,4 +10,4 @@ registries:
   - type: standard
     ref: v4.34.0 # renovate: depName=aquaproj/aqua-registry
 packages:
-  - name: awslabs/mountpoint-s3@mountpoint-s3-0.4.1
+  - name: awslabs/mountpoint-s3@mountpoint-s3-1.0.0
