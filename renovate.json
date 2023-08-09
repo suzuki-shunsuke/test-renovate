@@ -2,22 +2,7 @@
    "extends": [
       "config:base",
       "github>suzuki-shunsuke/renovate-config#2.1.0",
-      "github>suzuki-shunsuke/renovate-config:nolimit#2.1.0"
-   ],
-   "regexManagers": [
-      {
-         "datasourceTemplate": "pypi",
-         "fileMatch": [
-            "\\.?aqua\\.ya?ml"
-         ],
-         "matchStrings": [
-            " +(?:version|'version'|\"version\") *: +(?<currentValue>[^'\" \\n]+) +# renovate: depName=pypi\\.org/(?<depName>[^\\n]+)",
-            " +(?:version|'version'|\"version\") *: +'(?<currentValue>[^'\" \\n]+)' +# renovate: depName=pypi\\.org/(?<depName>[^\\n]+)",
-            " +(?:version|'version'|\"version\") *: +\"(?<currentValue>[^'\" \\n]+)\" +# renovate: depName=pypi\\.org/(?<depName>[^\\n]+)",
-            " +(?:name|'name'|\"name\") *: +pypi\\.org/(?<depName>[^\\n]+)@(?<currentValue>[^'\" \\n]+)",
-            " +(?:name|'name'|\"name\") *: +'pypi\\.org/(?<depName>[^\\n]+)@(?<currentValue>[^'\" \\n]+)'",
-            " +(?:name|'name'|\"name\") *: +\"pypi\\.org/(?<depName>[^\\n]+)@(?<currentValue>[^'\" \\n]+)\""
-         ]
-      }
+      "github>suzuki-shunsuke/renovate-config:nolimit#2.1.0",
+      "github>aquaproj/aqua-renovate-config#1.5.2"
    ]
 }
