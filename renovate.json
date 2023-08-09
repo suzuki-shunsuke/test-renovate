@@ -1,26 +1,6 @@
 {
    "extends": [
-      "config:base"
-   ],
-   "branchConcurrentLimit": 0,
-   "prConcurrentLimit": 0,
-   "prHourlyLimit": 0,
-   "regexManagers": [
-      {
-         "datasourceTemplate": "github-tags",
-         "depNameTemplate": "awslabs/mountpoint-s3",
-         "extractVersionTemplate": "^mountpoint-s3-(?<version>.*)$",
-         "fileMatch": [
-            "\\.?aqua\\.ya?ml"
-         ],
-         "matchStrings": [
-            " +(?:version|'version'|\"version\") *: +mountpoint-s3-(?<currentValue>[^'\" \\n]+) +# renovate: depName=awslabs/mountpoint-s3[ \\n]",
-            " +(?:version|'version'|\"version\") *: +'mountpoint-s3-(?<currentValue>[^'\" \\n]+)' +# renovate: depName=awslabs/mountpoint-s3[ \\n]",
-            " +(?:version|'version'|\"version\") *: +\"mountpoint-s3-(?<currentValue>[^'\" \\n]+)\" +# renovate: depName=awslabs/mountpoint-s3[ \\n]",
-            " +(?:name|'name'|\"name\") *: +awslabs/mountpoint-s3@mountpoint-s3-(?<currentValue>[^'\" \\n]+)",
-            " +(?:name|'name'|\"name\") *: +'awslabs/mountpoint-s3@mountpoint-s3-(?<currentValue>[^'\" \\n]+)'",
-            " +(?:name|'name'|\"name\") *: +\"awslabs/mountpoint-s3@mountpoint-s3-(?<currentValue>[^'\" \\n]+)\""
-         ]
-      }
+      "config:base",
+      "github>aquaproj/aqua-renovate-config"
    ]
 }
