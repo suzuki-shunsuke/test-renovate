@@ -1,9 +1,10 @@
 {
    "extends": [
-      "config:base",
-      "github>suzuki-shunsuke/renovate-config:nolimit#2.1.0",
-      "github>aquaproj/aqua-renovate-config#1.7.0"
+      "config:base"
    ],
+   "branchConcurrentLimit": 0,
+   "prConcurrentLimit": 0,
+   "prHourlyLimit": 0,
    "regexManagers": [
       {
          "datasourceTemplate": "github-tags",
