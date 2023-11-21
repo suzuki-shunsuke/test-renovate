@@ -1,24 +1,6 @@
 {
    "extends": [
       "config:base",
-      "github>aquaproj/aqua-renovate-config"
-   ],
-   "regexManagers": [
-      {
-         "datasourceTemplate": "npm",
-         "depNameTemplate": "trunk-io/launcher",
-         "fileMatch": [
-            "\\.?aqua\\.ya?ml"
-         ],
-         "matchStrings": [
-            " +(?:version|'version'|\"version\") *: +(?<currentValue>[^'\" \\n]+) +# renovate: depName=trunk-io/launcher[ \\n]",
-            " +(?:version|'version'|\"version\") *: +'(?<currentValue>[^'\" \\n]+)' +# renovate: depName=trunk-io/launcher[ \\n]",
-            " +(?:version|'version'|\"version\") *: +\"(?<currentValue>[^'\" \\n]+)\" +# renovate: depName=trunk-io/launcher[ \\n]",
-            " +(?:name|'name'|\"name\") *: +trunk-io/launcher@(?<currentValue>[^'\" \\n]+)",
-            " +(?:name|'name'|\"name\") *: +'trunk-io/launcher@(?<currentValue>[^'\" \\n]+)'",
-            " +(?:name|'name'|\"name\") *: +\"trunk-io/launcher@(?<currentValue>[^'\" \\n]+)\""
-         ],
-         "packageNameTemplate": "@trunkio/launcher"
-      }
+      "github>aquaproj/aqua-renovate-config:aqua-renovate-config#1.13.0(default\\.json)"
    ]
 }
