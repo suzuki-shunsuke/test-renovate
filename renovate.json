@@ -12,7 +12,7 @@
             "hello\\.txt"
          ],
          "matchStrings": [
-            "github-tags>suzuki-shunsuke/lintnet#(?<currentValue>[^'\" \\n]+)"
+            "github-tags>suzuki-shunsuke/lintnet#(?<currentDigest>[^'\" \\n]+)"
          ]
       }
    ]
