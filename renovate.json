@@ -5,8 +5,9 @@
    "customManagers": [
       {
          "customType": "regex",
-         "datasourceTemplate": "github-tags",
+         "datasourceTemplate": "git-refs",
          "depNameTemplate": "suzuki-shunsuke/lintnet",
+         "packageNameTemplate": "https://github.com/suzuki-shunsuke/lintnet",
          "fileMatch": [
             "hello\\.txt"
          ],
