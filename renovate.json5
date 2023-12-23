@@ -21,7 +21,7 @@
          "customType": "regex",
          // "datasourceTemplate": "git-refs",
          // "currentValueTemplate": "main",
-         "datasourceTemplate": "git-tags",
+         "datasourceTemplate": "github-tags",
          "fileMatch": [
             "\\.?lintnet\\.ya?ml$"
          ],
