@@ -27,7 +27,19 @@
          ],
          "matchStrings": [
             // - github.com/suzuki-shunsuke/tfcmt/examples/lint/csv.jsonnet@ebd3c7221bf26d51d3cdd0838844dcf14d28ba80 # v4.7.0
-            "(?<depName>github\\.com/(?<packageName>[^'\" .@/\\n]+/[^'\" @/\\n]+)(/[^'\" /@\\n]+)*)@(?<currentValue>[^'\" \\n]+)",
+            "(?<depName>github\\.com/(?<packageName>[^'\" .@/\\n]+/[^'\" @/\\n]+)(/[^'\" /@\\n]+)*)@(?<currentValue>[^'\" @/\\n]+)",
+         ]
+      },
+      {
+         "customType": "regex",
+         "datasourceTemplate": "git-refs",
+         "currentValueTemplate": "main",
+         "fileMatch": [
+            "\\.?lintnet\\.ya?ml$"
+         ],
+         "matchStrings": [
+            // - github.com/suzuki-shunsuke/tfcmt/examples/lint/csv.jsonnet@ebd3c7221bf26d51d3cdd0838844dcf14d28ba80 # v4.7.0
+            "(?<depName>github\\.com/(?<packageName>[^'\" .@/\\n]+/[^'\" @/\\n]+)(/[^'\" /@\\n]+)*)@(?<currentValue>[0-9a-fA-F]{40})",
          ]
       }
    ]
