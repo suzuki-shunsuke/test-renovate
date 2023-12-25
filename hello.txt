@@ -1,1 +1,1 @@
-github-tags>suzuki-shunsuke/lintnet#97421d0f7551da39c62d404085684f6c07e33e38
+github-tags>suzuki-shunsuke/lintnet#adb9327cbf53bf4ca1a043d5f7b995875793b22b
