@@ -1,7 +1,8 @@
 {
-   "extends": [
-      "config:recommended",
+   extends: [
+      "config:best-practices",
       "github>suzuki-shunsuke/renovate-config:nolimit#2.2.0",
-      "github>aquaproj/aqua-renovate-config",
+      "github>aquaproj/aqua-renovate-config#2.2.0",
+      "github>lintnet/renovate-config(TEST\\.md)",
    ],
 }
