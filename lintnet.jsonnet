@@ -2,14 +2,10 @@ function(param) {
   targets: [
     {
       data_files: [
-        '**/*',
-        '!.git/**',
-      ],
-      lint_files: [
-        'hello.jsonnet',
+        '**/*.tf',
       ],
       modules: [
-        'github.com/suzuki-shunsuke/example-lintnet-modules/newline.jsonnet@03d2ecad06b8c7a980e677ce81387f0c3fe6461b:v0.1.1',
+        'github_archive/github.com/lintnet-modules/terraform-aws/hcl/forbid_provider_endpoints/main.jsonnet@5ea4bd6b3b13430eede398ab4c8c5c7f0c9d029e:v0.1.0',
       ],
     },
   ],

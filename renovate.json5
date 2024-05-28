@@ -3,6 +3,7 @@
       "config:best-practices",
       "github>suzuki-shunsuke/renovate-config:nolimit#2.2.0",
       "github>aquaproj/aqua-renovate-config",
+      "github>lintnet/renovate-config",
       "github>lintnet/renovate-config:file(TEST\\.md)",
    ],
 }
