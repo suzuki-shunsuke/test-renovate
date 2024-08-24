@@ -15,7 +15,7 @@
             "\\.?aqua\\.ya?ml"
          ],
          "matchStrings": [
-            " +(?:python_version|'python_version'|\"python_version\") *: +(?<currentValue>[^'\" \\n]+)"
+            " +(?:python_version|'python_version'|\"python_version\") *: +(?:(?<currentValue>[^'\" \\n]+)|'(?<currentValue>[^'\" \\n]+)'|\"(?<currentValue>[^'\" \\n]+)\")"
          ],
          "matchStringsStrategy": "any",
          "versioningTemplate": "python"
