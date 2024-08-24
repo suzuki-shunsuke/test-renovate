@@ -14,3 +14,9 @@ packages:
   - name: indygreg/python-build-standalone@20240726
     vars:
       python_version: 3.10.0
+  - name: indygreg/python-build-standalone@20240726
+    vars:
+      python_version: '3.10.0'
+  - name: indygreg/python-build-standalone@20240726
+    vars:
+      python_version: "3.10.0"
