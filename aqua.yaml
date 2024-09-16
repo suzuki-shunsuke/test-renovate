@@ -10,7 +10,7 @@ registries:
   - type: standard
     ref: v4.34.0 # renovate: depName=aquaproj/aqua-registry
 packages:
-  - name: cli/cli@v2.30.0
+  - name: cli/cli@v2.57.0
   - name: indygreg/python-build-standalone@20240726
     vars:
       python_version: 3.10.0
