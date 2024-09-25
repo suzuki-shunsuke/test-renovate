@@ -2,25 +2,6 @@
    extends: [
       "config:best-practices",
       "github>suzuki-shunsuke/renovate-config:nolimit#2.2.0",
-      "github>aquaproj/aqua-renovate-config",
-      "github>lintnet/renovate-config",
-      "github>lintnet/renovate-config:file(TEST\\.md)",
-   ],
-   customManagers: [
-      {
-         "customType": "regex",
-         "datasourceTemplate": "python-version",
-         "depNameTemplate": "python",
-         "fileMatch": [
-            "\\.?aqua\\.ya?ml"
-         ],
-         "matchStrings": [
-            " +(?:python_version|'python_version'|\"python_version\") *: +(?<currentValue>[^'\" \\n]+)",
-            " +(?:python_version|'python_version'|\"python_version\") *: +\"(?<currentValue>[^'\" \\n]+)\"",
-            " +(?:python_version|'python_version'|\"python_version\") *: +'(?<currentValue>[^'\" \\n]+)'"
-         ],
-         "matchStringsStrategy": "any",
-         "versioningTemplate": "python"
-      },
+      "github>aquaproj/aqua-renovate-config#2.3.1",
    ],
 }
