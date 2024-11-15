@@ -1,16 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:best-practices",
-    "github>aquaproj/aqua-renovate-config#2.3.1",
-    "github>aquaproj/aqua-renovate-config:file#2.3.1(\\.aqua/imports/.*\\.ya?ml)",
+    "helpers:pinGitHubActionDigests",
   ],
   "prConcurrentLimit": 0,
   "prHourlyLimit": 0,
-  "enabledManagers": [
-    "custom.regex",
-  ],
-  "includePaths": [
-    ".aqua/**",
-  ],
 }
