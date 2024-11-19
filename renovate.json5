@@ -1,22 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "prConcurrentLimit": 0,
-  "prHourlyLimit": 0,
-  "customManagers": [
-    {
-       "customType": "regex",
-       "datasourceTemplate": "go",
-       "fileMatch": [
-          "\\.?aqua\\.ya?ml"
-       ],
-       "matchStrings": [
-          " +(?:version|'version'|\"version\") *: +(?<currentValue>[^'\" \\n]+) +# renovate: depName=(?<depName>_go/(?<packageName>[^#\\n]+)(?:#.*)?)",
-          " +(?:version|'version'|\"version\") *: +'(?<currentValue>[^'\" \\n]+)' +# renovate: depName=(?<depName>_go/(?<packageName>[^#\\n]+)(?:#.*)?)",
-          " +(?:version|'version'|\"version\") *: +\"(?<currentValue>[^'\" \\n]+)\" +# renovate: depName=(?<depName>_go/(?<packageName>[^#\\n]+)(?:#.*)?)",
-          " +(?:name|'name'|\"name\") *: +(?<depName>_go/(?<packageName>[^#\\n]+)(?:#.*)?)@(?<currentValue>[^'\" \\n]+)",
-          " +(?:name|'name'|\"name\") *: +'(?<depName>_go/(?<packageName>[^#\\n]+)(?:#.*)?)@(?<currentValue>[^'\" \\n]+)'",
-          " +(?:name|'name'|\"name\") *: +\"(?<depName>_go/(?<packageName>[^#\\n]+)(?:#.*)?)@(?<currentValue>[^'\" \\n]+)\""
-       ]
-    },
+  "extends": [
+    'github>aquaproj/aqua-renovate-config#2.4.0',
+    'github>suzuki-shunsuke/renovate-config#2.4.0',
+    'github>suzuki-shunsuke/renovate-config:nolimit#2.4.0',
   ],
 }
