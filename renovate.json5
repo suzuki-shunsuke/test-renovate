@@ -9,18 +9,11 @@
       {
          "customType": "regex",
          "datasourceTemplate": "github-releases",
-         "depNameTemplate": "bitwarden/clients",
-         "extractVersionTemplate": "^cli-(?<version>.*)$",
          "fileMatch": [
-            "\\.?aqua\\.ya?ml"
+            "\\.ya?ml$"
          ],
          "matchStrings": [
-            " +(?:version|'version'|\"version\") *: +cli-(?<currentValue>[^'\" \\n]+) +# renovate: depName=bitwarden/clients[ \\n]",
-            " +(?:version|'version'|\"version\") *: +'cli-(?<currentValue>[^'\" \\n]+)' +# renovate: depName=bitwarden/clients[ \\n]",
-            " +(?:version|'version'|\"version\") *: +\"cli-(?<currentValue>[^'\" \\n]+)\" +# renovate: depName=bitwarden/clients[ \\n]",
-            " +(?:name|'name'|\"name\") *: +bitwarden/clients@cli-(?<currentValue>[^'\" \\n]+)",
-            " +(?:name|'name'|\"name\") *: +'bitwarden/clients@cli-(?<currentValue>[^'\" \\n]+)'",
-            " +(?:name|'name'|\"name\") *: +\"bitwarden/clients@cli-(?<currentValue>[^'\" \\n]+)\""
+            "# yaml-language-server: $schema=https://raw.githubusercontent.com/(?<packageName>[^/:# \\n]+/[^/:# \\n]+)/(?<currentValue>[^\" \\n\\(]+)/.*\\.json",
          ],
       } 
   ]
