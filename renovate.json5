@@ -4,4 +4,10 @@
     'github>suzuki-shunsuke/renovate-config:nolimit#3.0.0',
     'github>aquaproj/aqua-renovate-config#2.7.0',
   ],
+  "packageRules": [
+    {
+      "matchPackageNames": ["external-secrets/external-secrets/esoctl"],
+      "allowedVersions": "/.*-esoctl$/"
+    }
+  ]
 }
