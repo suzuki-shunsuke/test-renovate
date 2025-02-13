@@ -6,7 +6,7 @@
   ],
   "packageRules": [
     {
-      "matchPackageNames": ["external-secrets/external-secrets/esoctl"],
+      "matchDepNames": ["external-secrets/external-secrets/esoctl"],
       "allowedVersions": "/.*-esoctl$/"
     }
   ]
