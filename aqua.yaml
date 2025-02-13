@@ -11,4 +11,4 @@ registries:
 - type: standard
   ref: v4.312.0 # renovate: depName=aquaproj/aqua-registry
 packages:
-- name: external-secrets/external-secrets/esoctl@v0.1.0-esoctl
+- name: external-secrets/external-secrets/esoctl@v0.14.1
