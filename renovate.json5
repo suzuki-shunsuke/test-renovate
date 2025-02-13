@@ -1,14 +1,6 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     'github>suzuki-shunsuke/renovate-config:nolimit#2.5.0',
     'github>suzuki-shunsuke/renovate-config#2.5.0',
-    'github>aquaproj/aqua-renovate-config#2.7.1',
   ],
-  "packageRules": [
-    {
-      "matchPackageNames": ["suzuki-shunsuke/renovate-config"],
-      "groupName": "suzuki-shunsuke/renovate-config"
-    }
-  ]
 }
