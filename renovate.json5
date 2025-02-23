@@ -1,7 +1,16 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     'github>suzuki-shunsuke/renovate-config:nolimit#3.1.0',
     'github>suzuki-shunsuke/renovate-config#3.1.0',
     'github>aquaproj/aqua-renovate-config#2.7.4',
+  ],
+  packageRules: [
+    {
+      matchPackageNames: [
+        "grpc/grpc-go/protoc-gen-go-grpc",
+      ],
+      allowedVersions: "/^cmd\\/protoc-gen-go-grpc\\//",
+    },
   ],
 }
