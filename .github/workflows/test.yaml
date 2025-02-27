@@ -18,4 +18,4 @@ jobs:
       - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3
         with:
           persist-credentials: false
-      - uses: actions/cache@387e18722e6ff315b24a3b8b071feddd27b7bf7e # v3.4.2
+      - uses: actions/cache@2f8e54208210a422b2efd51efaa6bd6d7ca8920f # v3.4.3
